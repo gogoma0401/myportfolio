@@ -1055,7 +1055,7 @@ h2 {
     }
 
     .skill_box {
-        width: 400px;
+        width: 380px;
         flex-direction: column;
     }
 
@@ -1161,6 +1161,7 @@ h2 {
     }
 
     .swiper-container {
+        width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
