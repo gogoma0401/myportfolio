@@ -1168,5 +1168,7 @@ h2 {
         height: 100px;
         z-index: 999;
     }
-
+    .guide_box .guide5{
+        display: none;
+    }
 }
