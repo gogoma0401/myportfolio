@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var twoHeight = $two.getBoundingClientRect().top + window.scrollY;
 
         if (window.scrollY <= twoHeight - 200) {
-            $inner.style.maxWidth = '900px';
+            $inner.style.maxWidth = '45%';
             $inner.style.backgroundColor = '#67676715'
         } else {
-            $inner.style.maxWidth = '1200px';
+            $inner.style.maxWidth = '80%';
             $inner.style.backgroundColor = 'rgba(173, 173, 173, 0.332)'
         }
     });
@@ -179,12 +179,12 @@ document.addEventListener('DOMContentLoaded', function () {
     //간단한 버튼
     document.querySelector('.mail').addEventListener('click', function (e) {
         e.target.style.fontSize = '14px'
-        e.target.innerHTML = '준비중';
+        e.target.innerHTML = 'gogoma0401@naver.com';
         alert('감사합니다.')
     });
     document.querySelector('.tel').addEventListener('click', function (e) {
-        const phoneNumber = '준비중';
-        e.target.innerHTML = `${phoneNumber}`;
+        e.target.style.fontSize = '14px'
+        e.target.innerHTML = '01075920401';
         alert('감사합니다.')
     });
 

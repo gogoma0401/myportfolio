@@ -935,7 +935,7 @@ main .arrow1 {
 
 .shop .cont .product_cont {
     width: 340px;
-    height: 410px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -945,7 +945,7 @@ main .arrow1 {
 
 .shop .cont .product_cont .img_box {
     max-width: 300px;
-    max-height: 380px;
+    max-height: 300px;
 }
 
 .shop .cont .product_cont .img_box img {
@@ -1189,7 +1189,7 @@ footer svg {
 
     .youtube {
         margin-top: 150px;
-        height: 800px;
+        height: 880px;
     }
 
     .youtube h2 {
@@ -1267,4 +1267,8 @@ footer svg {
     }
 }
 
-@media screen and(max-width:480px) {}
+@media screen and(max-width:480px) {
+    main .intro {
+        height: 50vh;
+    }
+}

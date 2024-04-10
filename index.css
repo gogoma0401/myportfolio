@@ -870,9 +870,17 @@ h2 {
         width: 150px;
         height: 150px;
     }
+
+    .overview ul li:nth-child(4) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .inner h1 {
+        font-size: 21px;
+    }
+
     .intro {
         font-size: 36px;
     }
@@ -895,6 +903,14 @@ h2 {
         min-width: 800px;
         padding: 20px 40px;
     }
+
+    .career {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
 
     .skill_box {
         display: flex;
@@ -976,14 +992,7 @@ h2 {
         box-sizing: border-box;
     }
 
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-right: 0;
-    }
-
+    
     .about_items {
         display: flex;
         align-items: center;
@@ -1012,12 +1021,16 @@ h2 {
     }
 
     .career li {
-        width: 200px;
+        width: 280px;
         display: inline-block;
+    }
+    
+    .career li .date{
+        display: block;
     }
 
     .career li div {
-        width: 200px;
+        width: 100%;
     }
 
     .skill_box {
@@ -1107,7 +1120,9 @@ h2 {
     .contact ul {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 15px;
+        padding: 0 20px;
     }
 
     .contact ul li {
