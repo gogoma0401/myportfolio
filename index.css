@@ -1059,6 +1059,7 @@ h2 {
         width: 450px;
         padding: 0 10px;
         flex-direction: column;
+        display: none;
     }
 
 
