@@ -1166,6 +1166,7 @@ h2 {
         width: 100px;
         height: 100px;
         z-index: 999;
+        background-color: red;
     }
     .guide_box .guide5{
         display: none;
