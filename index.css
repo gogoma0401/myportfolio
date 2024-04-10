@@ -386,8 +386,6 @@ h2 {
     font-weight: normal;
 }
 
-.item {}
-
 .item p {
     overflow: hidden;
     margin-bottom: 5px;
@@ -1148,7 +1146,9 @@ h2 {
         line-height: 50px;
         font-size: 16px;
     }
-
+    .contact ul li:nth-child(3){
+        display: none;
+    }
     .pulse-button {
         width: 100px;
         height: 100px;
