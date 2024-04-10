@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kgmobility</title>
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="fonts.css">
+    <!-- index css -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- 폰트어썸 아이콘 -->
+    <script src="https://kit.fontawesome.com/d721630e40.js" crossorigin="anonymous"></script>
+    <!-- 제이쿼리 스크립트 -->
+    <script src="../../common/jquery-3.7.1.min.js"></script>
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--index js-->
+    <script src="./index.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="gnb">
+            <div class="logo_box">
+                <img src="./imgaes/logo.png" alt="">
+            </div>
+            <ul class="list_menu">
+                <li>
+                    <a href="#">차량 정보</a>
+                    <ul class="sub-list">
+                        <li><a href="#">모델 1</a></li>
+                        <li><a href="#">모델 2</a></li>
+                        <li><a href="#">모델 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">구매정보</a>
+                    <ul class="sub-list">
+                        <li><a href="#">구매 안내</a></li>
+                        <li><a href="#">할부 옵션</a></li>
+                        <li><a href="#">리스 옵션</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">서비스</a>
+                    <ul class="sub-list">
+                        <li><a href="#">정기 점검</a></li>
+                        <li><a href="#">수리 서비스</a></li>
+                        <li><a href="#">부품 교체</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PR센터</a>
+                    <ul class="sub-list">
+                        <li><a href="#">보도 자료</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">미디어 리소스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul class="sub-list">
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">비전과 가치</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="icon_box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </div>
+        
+    </header>
+    
+    <main>
+        <section class="slide_box">
+            <div class="swiper mySwiper" data-swiper-autoplay="2000">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./imgaes/slide5.jpg" alt="">
+                        <div class="txt_box">
+                            <p>TORRES EVX</p>
+                            <p>First Electiric Leisure SUV</p>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imgaes/slide2.jpg" alt="">
+                        <div class="txt_box">
+                            <p>VERTEX EV</p>
+                            <p>Next-Gen Electric Adventure</p>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imgaes/slide3.jpg" alt="">
+                        <div class="txt_box">
+                            <p>ZENITH EC2</p>
+                            <p>Efficient Electric Commuter</p>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imgaes/slide1.jpg" alt="">
+                        <div class="txt_box">
+                            <p>AURA Elegance</p>
+                            <p>Luxury Electric Crossover</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+            <div class="img_box">
+                <img src="./imgaes/back1.png" alt="">
+            </div>
+        </section>
+        <section class="model_container">
+            <p>Model</p>
+            <p class="intro">최근 한달동안 고객님들이 가장 많이 구매하신 모델입니다.</p>
+            <div class="model_txt">
+                <ul>
+                    <li>전체</li>
+                    <li>2-30대</li>
+                    <li>40대</li>
+                    <li>50대</li>
+                </ul>
+            </div>
+            <div class="model">
+                <div class="model_img model_img1">
+                    <div class="img_box">
+                        <img src="./imgaes/model1.jpg" alt="모델1">
+                    </div>
+                    <p>1위. TORRES EVX</p>
+                </div>
+                <div class="model_img model_img2">
+                    <div class="img_box">
+                        <img src="./imgaes/model2.jpg" alt="모델2">
+                    </div>
+                    <p>2위. KORANDO</p>
+                </div>
+                <div class="model_img model_img3">
+                    <div class="img_box">
+                        <img src="./imgaes/model3.jpg" alt="모델3">
+                    </div>
+                    <p>3위. TIVOLIAIR</p>
+                </div>
+            </div>
+            <div class="slide_button">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+            </div>
+            <div class="circles">
+                <span class="circle circle1"></span>
+                <span class="circle circle2"></span>
+                <span class="circle circle3"></span>
+            </div>
+        </section>
+        <section>
+            <div class="electric">
+                <p>Electric Car</p>
+                <p>지구 환경을 품은 KG모빌리티의 미래를 경험해 보세요</p>
+                <div class="electric_box">
+                    <div class="img_box">
+                        <img src="./imgaes/electric.jpg" alt="전기차내부">
+                    </div>
+                    <div class="img_txt">
+                        <h2>TORRES EVX</h2>
+                        <P>내가만드는 세상</P>
+                        <P><span class="app-down">고속도로/자동차 전용도로 주행 시 선행차량과의 거리를 유지하며 </span>운전자가 설정한 속도 및 안전 속도에 맞춰, 차로 중앙을 유지하며 주행하도록 도와줍니다.</P>
+                        <button>자세히 보기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="brand">
+                <p>brand</p>
+                <p>지속가능한 미래로의 연결을 추구하는 KG모빌리티 브랜드 캠패인을 만나보세요</p>
+                <div class="img_boxs">
+                    <div class="img_box img_box1">
+                        <img src="./imgaes/brand1.jpg" alt="">
+                    </div>
+                    <div class="img_box img_box2">
+                        <img src="./imgaes/brand2.jpg" alt="">
+                    </div>
+                    <div class="img_box img_box3">
+                        <img src="./imgaes/brand3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="overview">
+                <p>Model Overview</p>
+                <ul>
+                    <li>최근 출시</li>
+                    <li>연비 효율</li>
+                    <li>적재 공간</li>
+                    <li>안전성</li>
+                </ul>
+                <div class="card_boxs">
+                    <div class="car_card card1">
+                        <h3>TORRES EVX</h3>
+                        <span>EV전기차</span><span>에어 A/T 2WD</span>
+                        <div class="img_box">
+                            <img src="./imgaes/overview1.jpg" alt="">
+                        </div>
+                        <div class="navi">
+                            <ul>
+                                <li>
+                                    <a href="">출시일</a>
+                                    <a href="">2023-09-21</a>
+                                </li>
+                                <li>
+                                    <a href="">배터리 용량</a>
+                                    <a href="">35.2kWh</a>
+                                </li>
+                                <li>
+                                    <a href="">최고 출력</a>
+                                    <a href="">64kw/87ps</a>
+                                </li>
+                                <li>
+                                    <a href="">외장 컬러</a>
+                                    <a href="">샌드브라운</a>
+                                </li>
+                                <li>
+                                    <a href="">옵션(3)</a>
+                                    <a href="">스타일(에이)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="price">76,540,000 <span>원</span> </h3>
+                        <div class="button_box">
+                            <button>구매상담 신청</button>
+                            <button>견적 내기</button>
+                        </div>
+                    </div>
+                    <div class="car_card card2">
+                        <h3>TORRES EVX 2</h3>
+                        <span>EV전기차</span><span>에어 A/T 2WD</span>
+                        <div class="img_box">
+                            <img src="./imgaes/overview2.jpg" alt="">
+                        </div>
+                        <div class="navi">
+                            <ul>
+                                <li><a href="">출시일</a><a href="">2023-09-21</a></li>
+                                <li><a href="">배터리 용량</a><a href="">35.2kWh</a></li>
+                                <li><a href="">최고 출력</a><a href="">64kw/87ps</a></li>
+                                <li><a href="">외장 컬러</a><a href="">샌드브라운</a></li>
+                                <li><a href="">옵션(3)</a><a href="">스타일(비)</a></li>
+                            </ul>
+                        </div>
+                        <h3 class="price">46,140,000 <span>원</span> </h3>
+                        <div class="button_box">
+                            <button>구매상담 신청</button>
+                            <button>견적 내기</button>
+                        </div>
+                    </div>
+
+                    <div class="car_card card3">
+                        <h3>TORRES EVX 3</h3>
+                        <span>EV전기차</span><span>에어 A/T 2WD</span>
+                        <div class="img_box">
+                            <img src="./imgaes/overview3.jpg" alt="">
+                        </div>
+                        <div class="navi">
+                            <ul>
+                                <li><a href="">출시일</a><a href="">2023-07-11</a></li>
+                                <li><a href="">배터리 용량</a><a href="">32.2kWh</a></li>
+                                <li><a href="">최고 출력</a><a href="">54kw/37ps</a></li>
+                                <li><a href="">외장 컬러</a><a href="">샌드브라운</a></li>
+                                <li><a href="">옵션(3)</a><a href="">스타일(에이)</a></li>
+                            </ul>
+                        </div>
+                        <h3 class="price">21,530,000 <span>원</span> </h3>
+                        <div class="button_box">
+                            <button>구매상담 신청</button>
+                            <button>견적 내기</button>
+                        </div>
+                    </div>
+
+                    <!-- card4 추가 -->
+                    <div class="car_card card4">
+                        <h3>TORRES EVX 4</h3>
+                        <span>EV전기차</span><span>에어 A/T 2WD</span>
+                        <div class="img_box">
+                            <img src="./imgaes/overview4.jpg" alt="">
+                        </div>
+                        <div class="navi">
+                            <ul>
+                                <li><a href="">출시일</a><a href="">2023-12-05</a></li>
+                                <li><a href="">배터리 용량</a><a href="">40.5kWh</a></li>
+                                <li><a href="">최고 출력</a><a href="">75kw/92ps</a></li>
+                                <li><a href="">외장 컬러</a><a href="">아이스블루</a></li>
+                                <li><a href="">옵션(3)</a><a href="">스타일(더비)</a></li>
+                            </ul>
+                        </div>
+                        <h3 class="price">85,980,000 <span>원</span> </h3>
+                        <div class="button_box">
+                            <button>구매상담 신청</button>
+                            <button>견적 내기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">더보기</div>
+            </div>
+        </section>
+        <section>
+            <p class="driver">드라이빙 시스템</p>
+            <div class="drive">
+                <div class="animation_box">
+                    <div class="guide_box">
+                        <div class="img_point">
+                            <p>더욱 안전하고 <span class="linebreaking">즐거운 드라이빙</span> </p>
+                            <p>KG 모빌리티의 다양한 운전자 보조 시스템<span class="linebreaking">으로 더욱 안전하고 즐거운 드라이빙을</span><span class="linebreaking">경험 할 수 있습니다.</span> </p>
+                        </div>
+                        <div class="img_point">
+                            <div class="img_box">
+                                <img src="./imgaes/drive1.jpg" alt="">
+                            </div>
+                            <p>어댑티브크루즈 컨트롤</p>
+                        </div>
+                        <div class="img_point">
+                            <div class="img_box">
+                                <img src="./imgaes/drive2.jpg" alt="">
+                            </div>
+                            <p>긴급제동 보조 시스템(AEBS, 보행자 감지포함)</p>
+                        </div>
+                        <div class="img_point">
+                            <div class="img_box">
+                                <img src="./imgaes/drive4.jpg" alt="">
+                            </div>
+                            <p>전방 추돌 경보 시스템(FCW)</p>
+                        </div>
+                        <div class="img_point">
+                            <div class="img_box">
+                                <img src="./imgaes/drive5.jpg" alt="">
+                            </div>
+                            <p>차선이탈 방지 프로그램</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="n_news">
+            <div class="news">
+                <p>브랜드 소식</p>
+            </div>
+            <div class="video_container">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/yz6wmOtM9tY?si=ts7ttHBvUafFPuc1&amp;controls=0?loop=1&autoplay=1&mute=1"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="app">
+                <p>MyKG 모빌리티</p>
+                <p>이제, 단순히 APP을 넘어서 당신의 키라이프를 책임질 <span class="linebreaking">'라이프 플랫폼myKG모빌리티'를 만나보세요.</span></p>
+                <div class="control_box">
+                    <div class="box">
+                        <div class="img_box">
+                            <img src="./imgaes/mini1.png" alt="">
+                            <div class="txt">견적내기</div>
+                        </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="box">
+                        <div class="img_box">
+                            <img src="./imgaes/mini2.png" alt="">
+                            <div class="txt">시승신청</div>
+                        </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="box">
+                        <div class="img_box">
+                            <img src="./imgaes/mini3.png" alt="">
+                            <div class="txt">판매 네트워크</div>
+                        </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="box">
+                        <div class="img_box">
+                            <img src="./imgaes/mini4.png" alt="">
+                            <div class="txt">이달의 구매 혜택</div>
+                        </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <ul class="main_menu">
+            <li>
+                <a href="#">이용약관</a>
+                <ul class="sub-menu">
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">개인정보</a></li>
+                    <li><a href="#">쿠키정책</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">기업소개</a>
+                <ul class="sub-menu">
+                    <li><a href="#">모델 히스토리</a></li>
+                    <li><a href="#">사업망</a></li>
+                    <li><a href="#">협력업체</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">관련사이트</a>
+                <ul class="sub-menu">
+                    <li><a href="#">KG 컬렉션</a></li>
+                    <li><a href="#">KG 아트랩</a></li>
+                    <li><a href="#">KG NFT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">KG 미디어</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Worldwide</a></li>
+                    <li><a href="#">전체메뉴보기</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="foot">
+            <div class="logo">
+                <img src="./imgaes/logo.png" alt="">
+            </div>
+            <div class="pack">
+                <div class="icons">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <p>copyright2023KGMOBILITY Corp.All right reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

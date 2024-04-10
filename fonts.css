@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'NotoSansKR-Thin';
+    src: url('./fonts/NotoSansKR-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-SemiBold';
+    src: url('./fonts/NotoSansKR-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    src: url('./fonts/NotoSansKR-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Medium';
+    src: url('./fonts/NotoSansKR-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Light';
+    src: url('./fonts/NotoSansKR-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-ExtraLight';
+    src: url('./fonts/NotoSansKR-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Bold';
+    src: url('./fonts/NotoSansKR-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Black';
+    src: url('./fonts/NotoSansKR-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-ExtraBold';
+    src: url('./fonts/AnyConv.com__NotoSansKR-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BakbakOne-Regular';
+    src: url('./fonts/AnyConv.com__BakbakOne-Regular.woff') format('woff');
+} 
+@font-face {
+    font-family: '나눔손글씨-딸에게-엄마가';
+    src: url('./fonts/나눔손글씨-딸에게-엄마가.woff') format('woff');
+}
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('./fonts/Giants-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Giants-Regular';
+    src: url('./fonts/Giants-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('./fonts/Giants-Inline.woff') format('woff');
+}
