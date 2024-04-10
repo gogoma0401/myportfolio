@@ -432,7 +432,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .skill-progress .item:nth-of-type(1) .progress-level {
@@ -1056,15 +1056,13 @@ h2 {
     }
 
     .skill_box {
-        width: 450px;
-        padding: 0 10px;
+        width: 400px;
         flex-direction: column;
-        display: none;
     }
 
 
     .skill-progress {
-        width: 370px;
+        width: 100%;
         padding: 0;
         margin-right: 0;
         margin-top: 0;
@@ -1163,13 +1161,20 @@ h2 {
         display: none;
     }
 
+    .swiper-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .pulse-button {
         width: 100px;
         height: 100px;
         z-index: 999;
-        background-color: red;
     }
-    .guide_box .guide5{
+    .guide_box{
+        z-index: 99;
+    }
+    .guide_box .guide5 {
         display: none;
     }
 }
