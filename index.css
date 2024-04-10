@@ -428,11 +428,11 @@ h2 {
 }
 
 .skill_box {
+    width: 1000px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    min-width: 1000px;
+    
 }
 
 .skill-progress .item:nth-of-type(1) .progress-level {
@@ -1056,15 +1056,14 @@ h2 {
     }
 
     .skill_box {
-        width: 100%;
+        width: 450px;
+        padding: 0 10px;
         flex-direction: column;
-        max-width: 460px;
-        min-width: 400px;
     }
 
 
     .skill-progress {
-        width: 380px;
+        width: 370px;
         padding: 0;
         margin-right: 0;
         margin-top: 0;
