@@ -1069,7 +1069,7 @@ h2 {
 
 
     .skill-progress {
-        width: 95%;
+        width: 310px;
         padding: 0;
         margin-right: 0;
         margin-top: 0;
@@ -1162,6 +1162,11 @@ h2 {
         height: 50px;
         line-height: 50px;
         font-size: 16px;
+    }
+
+    .contact p {
+        width: 400px;
+        font-size: 14px;
     }
 
     .contact ul li:nth-child(3) {
