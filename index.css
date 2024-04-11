@@ -1004,9 +1004,8 @@ h2 {
 
     .container {
         width: 100%;
-        max-width: 440px;
-        min-width: 340px;
-        padding: 20px 80px;
+        max-width: 410px;
+        min-width: 310px;
         box-sizing: border-box;
     }
 
@@ -1034,7 +1033,10 @@ h2 {
     .career {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-around;
+        margin: 0;
+        padding: 0;
     }
 
     .career li {
@@ -1052,21 +1054,22 @@ h2 {
     }
 
     .three {
+        width: 100%;
+        align-items: center;
         justify-content: center;
-        max-width: 440px;
     }
 
     .skill_box {
         width: 100%;
-        max-width: 440px;
-        min-width: 340px;
+        max-width: 410px;
+        min-width: 310px;
         flex-direction: column;
         box-sizing: border-box;
     }
 
 
     .skill-progress {
-        width: 100%;
+        width: 95%;
         padding: 0;
         margin-right: 0;
         margin-top: 0;
