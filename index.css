@@ -1322,8 +1322,8 @@ h2 {
     }
 
     .shortcut {
-        top: 3%;
-        left: 3%;
+        top: 2%;
+        left: 2%;
     }
 
     .cut {
@@ -1331,8 +1331,8 @@ h2 {
     }
 
     .pulse-button {
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
     }
 
     .pulse-button a {
@@ -1346,7 +1346,7 @@ h2 {
 
         70% {
             transform: scale(1);
-            box-shadow: 0 0 0 10px rgba(90, 153, 212, 0);
+            box-shadow: 0 0 0 9px rgba(90, 153, 212, 0);
         }
 
         100% {

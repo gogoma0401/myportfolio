@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $inner.style.maxWidth = '58%';
             $inner.style.backgroundColor = '#67676715';
         } else {
-            $inner.style.maxWidth = '85%';
+            $inner.style.maxWidth = '81%';
             $inner.style.backgroundColor = 'rgba(173, 173, 173, 0.332)';
         }
 
