@@ -1003,9 +1003,9 @@ h2 {
     }
 
     .container {
-        width: 100%;
-        max-width: 410px;
-        min-width: 310px;
+        max-width: 440px;
+        min-width: 400px;
+        padding: 20px;
         box-sizing: border-box;
     }
 
@@ -1028,6 +1028,28 @@ h2 {
 
     h2 {
         padding-bottom: 20px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    .about ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about ul li {
+        margin: 10px;
+    }
+
+    .about ul li:nth-child(1) {
+        padding-right: 0;
     }
 
     .career {
@@ -1054,25 +1076,24 @@ h2 {
     }
 
     .three {
-        width: 100%;
-        align-items: center;
         justify-content: center;
+        max-width: 440px;
     }
 
     .skill_box {
-        width: 100%;
-        max-width: 410px;
-        min-width: 310px;
+        max-width: 440px;
+        min-width: 400px;
         flex-direction: column;
+        padding: 0 10px;
         box-sizing: border-box;
     }
 
 
     .skill-progress {
-        width: 310px;
+        max-width: 420px;
+        min-width: 380px;
         padding: 0;
-        margin-right: 0;
-        margin-top: 0;
+        margin: 0;
     }
 
     .icon_box ul li {
@@ -1092,6 +1113,14 @@ h2 {
     .explan ul {
         padding: 0;
         list-style: none;
+    }
+
+    .portfolio {
+        width: 100%;
+        margin: auto;
+        max-width: 420px;
+        min-width: 380px;
+        overflow: hidden;
     }
 
     .overview>ul {
@@ -1162,11 +1191,6 @@ h2 {
         height: 50px;
         line-height: 50px;
         font-size: 16px;
-    }
-
-    .contact p {
-        width: 400px;
-        font-size: 14px;
     }
 
     .contact ul li:nth-child(3) {
