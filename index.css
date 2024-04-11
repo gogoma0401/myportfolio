@@ -1004,8 +1004,9 @@ h2 {
 
     .container {
         width: 100%;
-        min-width: 420px;
-        padding: 20px;
+        max-width: 440px;
+        min-width: 340px;
+        padding: 20px 80px;
         box-sizing: border-box;
     }
 
@@ -1052,11 +1053,15 @@ h2 {
 
     .three {
         justify-content: center;
+        max-width: 440px;
     }
 
     .skill_box {
-        width: 380px;
+        width: 100%;
+        max-width: 440px;
+        min-width: 340px;
         flex-direction: column;
+        box-sizing: border-box;
     }
 
 
@@ -1171,9 +1176,11 @@ h2 {
         height: 100px;
         z-index: 999;
     }
-    .guide_box{
+
+    .guide_box {
         z-index: 99;
     }
+
     .guide_box .guide5 {
         display: none;
     }
