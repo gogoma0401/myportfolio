@@ -1216,6 +1216,7 @@ h2 {
     .guide_box {
         z-index: 99;
         right: 8%;
+        display: none;
     }
 
     .guide_box .guide5 {
