@@ -542,7 +542,7 @@ h2 {
 
 .swiper-container {
     width: 100%;
-    overflow: hie;
+    overflow: hidden;
 }
 
 .portfolio a {
@@ -550,8 +550,6 @@ h2 {
 }
 
 .swiper-wrapper {
-    width: 100%;
-    overflow: hidden;
 }
 
 .overview {
