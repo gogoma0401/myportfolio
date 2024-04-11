@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var twoHeight = $two.getBoundingClientRect().top + window.scrollY;
 
         if (window.scrollY <= twoHeight - 200) {
-            $inner.style.maxWidth = '45%';
+            $inner.style.maxWidth = '55%';
             $inner.style.backgroundColor = '#67676715'
         } else {
             $inner.style.maxWidth = '80%';
