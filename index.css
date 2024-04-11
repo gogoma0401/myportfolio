@@ -1185,6 +1185,32 @@ h2 {
         padding-right: 15px;
     }
 
+    .icon_box ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .html5,
+    .css3,
+    .script,
+    .gsap,
+    .photoshop,
+    .figma {
+        position: absolute;
+        max-width: 410px;
+        min-width: 330px;
+        padding: 10px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .skill_box {
+        max-width: 440px;
+        width: 100%;
+    }
+
     .skill-progress {
         max-width: 420px;
         padding-bottom: 40px;
