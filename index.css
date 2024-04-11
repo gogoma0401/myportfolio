@@ -1242,12 +1242,12 @@ h2 {
     }
 
     .overview .link p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .overview>ul {
         max-width: 420px;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .overview>ul li {
