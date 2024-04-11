@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // 헤더 inner 표시
         if (window.scrollY <= twoHeight - 200) {
-            $inner.style.maxWidth = '55%';
+            $inner.style.maxWidth = '58%';
             $inner.style.backgroundColor = '#67676715';
         } else {
-            $inner.style.maxWidth = '80%';
+            $inner.style.maxWidth = '85%';
             $inner.style.backgroundColor = 'rgba(173, 173, 173, 0.332)';
         }
 
