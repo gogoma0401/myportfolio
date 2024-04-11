@@ -801,8 +801,7 @@ h2 {
 .cut {
     width: 200px;
     height: 100%;
-    margin: 0 auto 0;
-    perspective: 1000;
+    margin: 0 auto;
     backface-visibility: hidden;
     color: #333;
 }
@@ -972,6 +971,11 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
+    body{
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
     header {
         max-width: 460px;
     }
@@ -1211,6 +1215,7 @@ h2 {
 
     .guide_box {
         z-index: 99;
+        right: 8%;
     }
 
     .guide_box .guide5 {
