@@ -443,7 +443,9 @@ h2 {
     padding: 0 60px;
     box-sizing: border-box;
 }
-
+.icon_box .mobile-txt {
+    display: none;
+}
 .icon_box h3 {
     text-align: right;
     font-size: 13px;
@@ -549,8 +551,7 @@ h2 {
     color: #333;
 }
 
-.swiper-wrapper {
-}
+.swiper-wrapper {}
 
 .overview {
     width: 100%;
@@ -983,6 +984,7 @@ h2 {
     }
 
     .explan {
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -1060,7 +1062,12 @@ h2 {
         padding: 0;
         box-sizing: border-box;
     }
-
+    .icon_box .mobile-txt {
+        display: block;
+    }
+    .icon_box .desk-txt {
+        display: none;
+    }
     .icon_box ul {
         align-items: center;
     }
@@ -1171,10 +1178,17 @@ h2 {
 
     .introduction {
         font-size: 13px;
+        letter-spacing: -0.05em;
+    }
+
+
+    .introduction .next2 {
+        height: 8px;
     }
 
     .career li {
-        padding: 8px 20px;
+        padding: 8px 10px;
+        font-size: 15px;
     }
 
     .career li .date {
@@ -1264,8 +1278,11 @@ h2 {
     .contact p {
         max-width: 420px;
         font-size: 14px;
+        letter-spacing: -0.04em; 
     }
-
+    .contact p .next3{
+        display: block;
+    }
     .contact ul {
         max-width: 420px;
         display: flex;
