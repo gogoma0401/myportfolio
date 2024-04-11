@@ -1149,8 +1149,8 @@ h2 {
     .inner {
         left: 97%;
         animation: slideInFromRight 1s forwards;
-        padding: 8px 11px;
-        font-size: 14px;
+        padding: 10px;
+        font-size: 13px;
     }
 
     @keyframes slideInFromRight {
@@ -1168,7 +1168,7 @@ h2 {
     }
 
     .intro {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .intro .back {
@@ -1176,8 +1176,8 @@ h2 {
     }
 
     .type_box {
-        top: 30%;
-        left: 20%;
+        top: 31%;
+        left: 9%;
     }
 
     .container {
