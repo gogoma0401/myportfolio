@@ -23,6 +23,7 @@ a {
 }
 
 header {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,10 +37,13 @@ header {
 
 .area {
     max-width: 1280px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 40px;
+    box-sizing: border-box;
     color: #fff;
 
 }
@@ -173,15 +177,21 @@ header {
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--pupule-color);
     width: 100%;
-    max-height: 818px;
     z-index: -99;
     overflow: hidden;
 }
 
-.guide img {
-    filter: brightness(0.9);
+.guide .img-box {
     max-width: 850px;
     height: 100%;
+    width: 100%;
+}
+
+.guide img {
+    filter: brightness(0.9);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .step {
@@ -191,8 +201,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 80px;
+    padding: 80px;
     margin-bottom: 0;
+    box-sizing: border-box;
 }
 
 .step p:nth-child(1) {
@@ -285,6 +296,8 @@ header {
 .customer {
     background-color: var(--beige-color);
     position: relative;
+    max-width: 1920px;
+    width: 100%;
 }
 
 .customer2 {
@@ -293,15 +306,15 @@ header {
 
 .benefits {
     background-color: var(--pupule-color);
-    width: 763px;
+    width: 40%;
     height: 515px;
     color: #fff;
     position: relative;
 }
 
 .benefits_box {
-    padding-top: 100px;
-    padding-left: 100px;
+    padding: 100px;
+    box-sizing: border-box;
 }
 
 .benefits_box>span {
@@ -348,13 +361,16 @@ header {
 }
 
 .search {
-    width: 1158px;
+    width: 60%;
     height: 282px;
     background-color: var(--pupule-color);
     position: absolute;
     top: -110px;
     right: 0;
     z-index: 999;
+    padding: 50px 80px;
+    box-sizing: border-box;
+    margin: auto;
 
 }
 
@@ -362,8 +378,6 @@ header {
     font-family: 'NotoSansKR-SemiBold', sans-serif;
     font-size: 32px;
     color: #fff;
-    margin-top: 85px;
-    margin-left: 110px;
 }
 
 .search .fa-magnifying-glass {
@@ -376,8 +390,8 @@ header {
     border: none;
     border-bottom: 1px solid #fff;
     height: 30px;
-    width: 786px;
-    margin-left: 110px;
+    max-width: 756px;
+    width: 100%;
 }
 
 .search input:focus {
@@ -390,7 +404,7 @@ header {
 }
 
 .talk .img-box {
-    width: 762px;
+    width: 40%;
     height: 645px;
     position: relative;
 }
@@ -478,8 +492,17 @@ header {
 
 .closing-remarks {
     width: 100%;
+    height: 100%;
     position: relative;
     margin-bottom: 0;
+}
+
+.closing-remarks img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    vertical-align: top;
 }
 
 .closing-remarks::before {
@@ -496,13 +519,6 @@ header {
 
 }
 
-.closing-remarks img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    vertical-align: top;
-}
 
 .closing-remarks .txt {
     font-family: 'NotoSansKR-SemiBold', sans-serif;
@@ -515,7 +531,7 @@ header {
 .closing-remarks .txt p:nth-child(1) {
     font-family: 'NotoSansKR-Bold', sans-serif;
     font-size: 48px;
-    margin-bottom: 100px;
+    padding-bottom: 80px;
     margin-top: 0px;
 }
 
@@ -529,7 +545,7 @@ header {
 }
 
 .sentence {
-    margin-top: 60px;
+    padding-top: 35px;
 }
 
 .closing-remarks .txt p:nth-last-child(1) {
@@ -537,7 +553,7 @@ header {
 }
 
 .owner {
-    margin-top: 150px;
+    padding-top: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -638,6 +654,7 @@ footer {
 }
 
 @media screen and (max-width : 1600px) {
+
     .title-txt p:nth-child(1) {
         font-size: 65px;
     }
@@ -667,8 +684,7 @@ footer {
     .closing-remarks .txt p:nth-child(1) {
         font-family: 'NotoSansKR-Bold', sans-serif;
         font-size: 32px;
-        margin-bottom: 25px;
-        margin-top: 0px;
+        margin: 0;
     }
 
     .closing-remarks .txt p:nth-child(2) {
@@ -680,8 +696,12 @@ footer {
         font-size: 24px;
     }
 
+    .search input[type=search] {
+        max-width: 590px;
+        width: 100%;
+    }
+
     .owner {
-        margin-top: 100px;
         font-size: 18px;
     }
 
@@ -718,19 +738,14 @@ footer {
         height: 880px;
     }
 
-    .search {
-        width: 948px;
-        height: 250px;
-    }
 
-    .benefits {
-        width: 663px;
-        height: 415px;
+    .search input[type=search] {
+        max-width: 400px;
+        width: 100%;
     }
 
     .talk .img-box {
-        width: 663px;
-        height: 415px;
+        height: 545px;
     }
 
     .question {
@@ -792,7 +807,7 @@ footer {
     .closing-remarks .txt p:nth-child(1) {
         font-family: 'NotoSansKR-Bold', sans-serif;
         font-size: 24px;
-        margin-bottom: 20px;
+        padding-bottom: 15px;
         margin-top: 0px;
     }
 
@@ -806,7 +821,6 @@ footer {
     }
 
     .owner {
-        margin-top: 100px;
         font-size: 18px;
     }
 
@@ -851,12 +865,6 @@ footer {
     }
 
 
-    .benefits_box {
-        padding-top: 80px;
-        padding-left: 100px;
-    }
-
-
     .step p:nth-child(1) {
         font-size: 36px;
     }
@@ -865,27 +873,12 @@ footer {
         font-size: 22px;
     }
 
-    .search {
-        width: 670px;
-        height: 282px;
-        top: -110px;
-        right: 0;
-    }
-
     .search p {
         font-size: 24px;
-        margin-top: 85px;
-        margin-left: 80px;
     }
 
     .search .fa-magnifying-glass {
         font-size: 24px;
-    }
-
-    .search input[type=search] {
-        height: 30px;
-        width: 486px;
-        margin-left: 80px;
     }
 
     .send {
@@ -929,7 +922,7 @@ footer {
     }
 
     .sentence {
-        margin-top: 20px;
+        padding-top: 25px;
     }
 
     .closing-remarks .txt p:nth-child(1) {
@@ -950,7 +943,6 @@ footer {
     }
 
     .owner {
-        margin-top: 80px;
         font-size: 18px;
     }
 
@@ -998,20 +990,7 @@ footer {
     }
 
     .search {
-        width: 580px;
-        height: 272px;
-    }
-
-    .search p {
-        margin-top: 75px;
-        margin-left: 40px;
-    }
-
-    .search input[type=search] {
-        height: 30px;
-        width: 456px;
-        margin-right: 10px;
-        margin-left: 40px;
+        height: 222px;
     }
 
     .question .infomation span:nth-child(1) {
@@ -1040,16 +1019,30 @@ footer {
     }
 
     .container2 {
+        max-width: 1024px;
+        width: 100%;
+        padding: 10px 40px;
         display: flex;
-        justify-content: space-around;
-        gap: 720px;
+        justify-content: space-between;
         align-items: center;
         z-index: 9999;
+        box-sizing: border-box;
+    }
+
+    .log_img {
+        width: 125px;
+        height: 45px;
+    }
+
+    .log_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .menu_full {
         width: 100%;
-        height: 670px;
+        height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
@@ -1070,13 +1063,17 @@ footer {
     }
 
     .menu_full ul:nth-child(1) {
+        max-width: 1024px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 0 40px;
+        padding: 10px 40px;
+        box-sizing: border-box;
+        margin: 0;
     }
 
     .menu_full ul:nth-child(2) li {
-        margin: 50px 0;
+        padding: 20px;
         padding-left: 50px;
         z-index: 9999;
         transition: 0.3s;
@@ -1089,12 +1086,7 @@ footer {
 
     .menu_icon {
         font-size: 40px;
-        color: var(--pupule-color);
-    }
-
-    .menu_icon {
-        font-size: 40px;
-        color: var(--pupule-color);
+        color: var(--pupule-color)
     }
 
     .title-txt {
@@ -1129,54 +1121,56 @@ footer {
     }
 
     .closing-remarks .txt {
-        top: 8%;
-        left: 110px;
+        top: 6%;
+        left: 80px;
     }
 
     .benefits {
-        width: 512px;
+        max-width: 500px;
+        width: 100%;
         height: 300px;
     }
 
     .benefits_box {
-        padding-top: 50px;
-        padding-left: 50px;
+        padding: 50px;
+        box-sizing: border-box;
     }
 
     .benefits_box p:nth-of-type(1) {
-        font-size: 38px;
+        font-size: 28px;
     }
 
     .talk .img-box {
-        width: 512px;
+        max-width: 500px;
+        width: 100%;
         height: 300px;
     }
 
     .sentence {
-        margin-top: 18px;
-
+        padding-top: 18px;
     }
 
     .closing-remarks .txt p:nth-child(1) {
         font-family: 'NotoSansKR-Bold', sans-serif;
-        font-size: 20px;
-        margin-bottom: 15px;
+        font-size: 18px;
+        padding-bottom: 15px;
         margin-top: 0px;
+        margin: 0;
     }
 
     .closing-remarks .txt p:nth-child(2) {
         font-family: 'NotoSansKR-Light', sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         margin-bottom: 0;
     }
 
     .closing-remarks .txt p .first {
-        font-size: 20px;
+        font-size: 18px;
 
     }
 
     .owner {
-        margin-top: 60px;
+        padding-top: 20px;
         font-size: 18px;
     }
 
@@ -1184,15 +1178,18 @@ footer {
         font-size: 35px;
 
     }
+
+    footer {
+        background-color: var(--pupule-color);
+        padding: 10px 30px;
+    }
+
+    .contact-information li p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width : 768px) {
-    .container2 {
-        gap: 0;
-        justify-content: space-between;
-        padding: 0 40px;
-    }
-
     .guide {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1200,7 +1197,6 @@ footer {
         width: 100%;
         z-index: -99;
         overflow: hidden;
-        max-height: max-content;
     }
 
     .guide img {
@@ -1275,12 +1271,12 @@ footer {
     .search2 {
         background-color: var(--pupule-color);
         font-size: 20px;
-        width: 80%;
-        height: 110px;
+        max-width: 500px;
+        width: 100%;
+        height: 140px;
         margin: auto;
-        padding-top: 40px;
-        padding-left: 50px;
-
+        padding: 30px 30px 10px;
+        box-sizing: border-box;
     }
 
     .search2 p {
@@ -1300,7 +1296,7 @@ footer {
         border: none;
         border-bottom: 1px solid #fff;
         height: 30px;
-        width: 500px;
+        width: 90%;
     }
 
     .benefits_box2 {
@@ -1454,19 +1450,20 @@ footer {
         text-align: left;
     }
 
+
     .foot .contact-information li p {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .foot .contact-information li:nth-child(1) p {
-        font-size: 22px;
+        font-size: 18px;
     }
 
 
     .foot .contact-information li:nth-child(2) p,
     .foot .contact-information li:nth-child(2) p span {
         font-family: 'NotoSansKR-SemiBold', sans-serif;
-        font-size: 21px;
+        font-size: 16px;
         color: var(--yellow-color);
     }
 
@@ -1476,7 +1473,7 @@ footer {
 
     .foot .contact-information li:nth-child(4) p {
         color: #fff;
-        font-size: 22px;
+        font-size: 16px;
     }
 }
 

@@ -18,6 +18,7 @@ $(document).ready(function () {
 
     var images = document.querySelectorAll('.load_imgbox img');
     var check = 0;
+
     function play() {
         images[check].style.display = 'none';
         check++;
@@ -29,7 +30,7 @@ $(document).ready(function () {
     }
     play();
 
-    
+
     // 모바일
     $('.app_menu .fa-bars').click(function () {
         $('.app_menu .fa-bars').fadeOut();
@@ -43,4 +44,12 @@ $(document).ready(function () {
         $('.app_sub').fadeOut();
     });
 
+    document.querySelector('.box').addEventListener('mouseenter', function () {
+        this.classList.add('show-scrollbar');
+    });
+
+    document.querySelector('.box').addEventListener('mouseleave', function () {
+        this.classList.remove('show-scrollbar');
+    });
+    
 });

@@ -36,13 +36,14 @@ header {
 }
 
 .gnb {
+    max-width: 1920px;
     width: 100%;
-    height: 100px;
+    height: 80px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 100px;
+    padding: 10px 50px;
     box-sizing: border-box;
 }
 
@@ -255,8 +256,8 @@ header {
     position: absolute;
     top: 12%;
     right: 5%;
-    width: 940px;
-    height: 640px;
+    width: 910px;
+    height: 610px;
 }
 
 .load_imgbox img {
@@ -272,8 +273,10 @@ header {
 }
 
 .best {
+    width: 100%;
     text-align: center;
-    margin-bottom: 200px;
+    padding-bottom: 300px;
+    margin: auto;
 }
 
 .best.animated {
@@ -289,85 +292,65 @@ header {
 .box {}
 
 .card_box {
+    max-width: 1920px;
+    padding: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
 }
 
-.card_box .box {
-    width: 50%;
+
+.card1 {
+    width: 540px;
+}
+
+.card1 img {
+    width: 100%;
+}
+
+.card1 .txt_box {
+    margin: auto;
+}
+
+.box {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    align-items: center;
+    padding-left: 30px;
 }
 
-.card {
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 50px;
+.card .txt_box {
+    width: 85%;
+    margin: auto;
+}
+
+.card2,
+.card3,
+.card4,
+.card5 {
+    width: 280px;
+    height: 350px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
 }
 
-.card1 {
-    width: 520px;
-}
-
-.box .card {
-    width: 330px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.card .txt_box {
-    width: 62%;
-}
-
-.card1 {}
-
-.card1 img {
-    width: 430px;
-}
-
-.card2 {
-    width: 50%;
-}
-
-.card2 img {
-    width: 240px;
-}
-
-.card3 {
-    width: 50%;
-}
-
-.card3 img {
-    width: 240px;
-}
-
-.card4 {
-    width: 50%;
-}
-
-.card4 img {
-    width: 240px;
-}
-
-.card5 {
-    width: 50%;
-}
-
+.card2 img,
+.card3 img,
+.card4 img,
 .card5 img {
-    width: 240px;
-}
-
-.card img {
+    width: 100%;
     object-fit: contain;
 }
+
 
 .best button {
     width: 120px;
@@ -378,16 +361,9 @@ header {
     text-align: center;
     border: none;
     box-shadow: #fe9f2b41 0px 7px 10px 0px;
+    margin-top: 50px;
 }
 
-/* width:300px;
-  height:100px;
-  border-radius:10px 0 0 0;
-  background:black;
-  transform:
-    skew(-20deg)
-    translate(30px, 0px);
-} */
 .order {
     width: 100%;
     height: 200px;
@@ -651,7 +627,7 @@ input:focus {
 footer {
     background-color: #9e0821;
     color: #fff;
-    padding: 0px 150px 50px;
+    padding: 0px 150px 40px;
 }
 
 .container {
@@ -701,31 +677,19 @@ footer .last li:nth-child(2) i {
 }
 
 @media screen and (max-width: 1400px) {
-
+    
     .back_img {
-        left: 12%;
+        left: 8%;
     }
 
     .load_imgbox {
         position: absolute;
         top: 22%;
-        right: 5%;
-        width: 710px;
+        right: 3%;
+        width: 700px;
         height: 500px;
     }
 
-    .card_box .box {
-        width: 95%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 15px;
-        justify-content: center;
-    }
-
-    .card1 {
-        width: 500px;
-    }
 
     .message .m_txt p:nth-child(1) {
         font-size: 28px;
@@ -840,38 +804,11 @@ footer .last li:nth-child(2) i {
     }
 
     .card_box {
-        width: 100%;
-        padding: 5px;
-    }
-
-    .card_box .box {
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 15px;
-        justify-content: center;
-    }
-
-    .card .txt_box {
-        width: 82%;
-    }
-
-    .card img {
-        width: 210px;
+        padding: 0 60px;
     }
 
     .card1 {
-        width: 350px;
-        padding: 30px;
-    }
-
-    .card1 img {
-        width: 300px;
-    }
-
-    .box .card {
-        width: 240px;
+        display: none;
     }
 
     .more {

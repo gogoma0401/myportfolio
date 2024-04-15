@@ -293,6 +293,7 @@ main .contain .parallelogram2::before {
     top: 50%;
     left: 0;
     transform: translate(-50%, -50%) skew(-30deg);
+    z-index: 9;
 }
 
 main .contain .parallelogram2 video {
@@ -324,6 +325,7 @@ main .contain .parallelogram3::before {
     top: 50%;
     left: 0;
     transform: translate(-50%, -50%) skew(-30deg);
+    z-index: 9;
 }
 
 main .contain .parallelogram3 video {
