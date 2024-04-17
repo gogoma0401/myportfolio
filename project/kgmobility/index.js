@@ -1,16 +1,25 @@
     //스와이프
     $(document).ready(function () {
         var swiper = new Swiper(".mySwiper", {
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
             pagination: {
-                el: ".swiper-pagination",
-                type: "fraction",
+                el: '.swiper-pagination',
             },
+
+            // Navigation arrows
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
         });
-
 
         const positionY = $(".model_container").offset().top;
         window.addEventListener("scroll", function () {
@@ -102,41 +111,97 @@
                 count = 1;
             }
         })
+        $('.circle1').click(function () {
+            $('.circle').css('background-color', '');
+            $('.circle1').css('background-color', '#002c5f');
+            $('.model_img1 .img_box img').attr('src', './imgaes/model1.jpg');
+            $('.model_img2 .img_box img').attr('src', './imgaes/model2.jpg');
+            $('.model_img3 .img_box img').attr('src', './imgaes/model3.jpg');
+            $('.model_img1 p').text('1위. KORANDO');
+            $('.model_img2 p').text('2위. TIVOLIAIR');
+            $('.model_img3 p').text('3위. TORRES EVX');
+            count == 1;
+        })
+        $('.circle2').click(function () {
+            $('.circle').css('background-color', '');
+            $('.circle2').css('background-color', '#002c5f');
+            $('.model_img1 .img_box img').attr('src', './imgaes/model2.jpg');
+            $('.model_img2 .img_box img').attr('src', './imgaes/model3.jpg');
+            $('.model_img3 .img_box img').attr('src', './imgaes/model1.jpg');
+            $('.model_img1 p').text('2위. TIVOLIAIR');
+            $('.model_img2 p').text('3위. TORRES EVX');
+            $('.model_img3 p').text('1위. KORANDO');
+            count == 2;
+        })
+        $('.circle3').click(function () {
+            $('.circle').css('background-color', '');
+            $('.circle3').css('background-color', '#002c5f');
+            $('.model_img1 .img_box img').attr('src', './imgaes/model3.jpg');
+            $('.model_img2 .img_box img').attr('src', './imgaes/model1.jpg');
+            $('.model_img3 .img_box img').attr('src', './imgaes/model2.jpg');
+            $('.model_img1 p').text('3위. TORRES EVX');
+            $('.model_img2 p').text('1위. KORANDO');
+            $('.model_img3 p').text('2위. TIVOLIAIR');
+            count == 3;
+        })
 
-        const animationBox = document.querySelector('.animation_box .guide_box');
+        // 무한롤링
+        function setFlowBanner() {
+            const $wrap = $('.drive_banner');
+            const $list = $('.drive_banner .list');
+            let wrapWidth = ''; //$wrap의 가로 크기
+            let listWidth = ''; //$list의 가로 크기
+            const speed = 92; //1초에 몇픽셀 이동하는지 설정
 
-        const clone = animationBox.cloneNode(true);
-        animationBox.appendChild(clone);
+            //리스트 복제
+            let $clone = $list.clone();
+            $wrap.append($clone);
+            flowBannerAct()
 
-        let currentPosition = 0;
-        const step = 1;
+            //반응형 :: 디바이스가 변경 될 때마다 배너 롤링 초기화
+            let oldWChk = window.innerWidth > 1279 ? 'pc' : window.innerWidth > 767 ? 'ta' : 'mo';
+            $(window).on('resize', function () {
+                let newWChk = window.innerWidth > 1279 ? 'pc' : window.innerWidth > 767 ? 'ta' : 'mo';
+                if (newWChk != oldWChk) {
+                    oldWChk = newWChk;
+                    flowBannerAct();
+                }
+            });
 
-        function animate() {
-            currentPosition -= step;
-            animationBox.style.transform = `translateX(${currentPosition}%)`;
+            //배너 실행 함수
+            function flowBannerAct() {
+                //배너 롤링 초기화
+                if (wrapWidth != '') {
+                    $wrap.find('.list').css({
+                        'animation': 'none'
+                    });
+                    $wrap.find('.list').slice(2).remove();
+                }
+                wrapWidth = $wrap.width();
+                listWidth = $list.width();
 
-            if (currentPosition <= -100) {
-                currentPosition = 0;
-
-                animationBox.removeChild(animationBox.firstChild);
-
-                const newClone = clone.cloneNode(true);
-                animationBox.appendChild(newClone);
+                //무한 반복을 위해 리스트를 복제 후 배너에 추가
+                if (listWidth < wrapWidth) {
+                    const listCount = Math.ceil(wrapWidth * 2 / listWidth);
+                    for (let i = 2; i < listCount; i++) {
+                        $clone = $clone.clone();
+                        $wrap.append($clone);
+                    }
+                }
+                $wrap.find('.list').css({
+                    'animation': `${listWidth / speed}s linear infinite flowRolling`
+                });
             }
 
-            requestAnimationFrame(animate);
+            // 마우스가 요소 위로 진입했을 때 일시정지
+            $wrap.on('mouseenter', function () {
+                $wrap.find('.list').css('animation-play-state', 'paused');
+            });
+
+            // 마우스가 요소에서 빠져나갈 때 재생
+            $wrap.on('mouseleave', function () {
+                $wrap.find('.list').css('animation-play-state', 'running');
+            });
         }
-
-        animate();
-
-        new Swiper('.notice .swiper', {
-            direction: 'vertical',
-            autoplay: true,
-            loop: true
-        });
-        document.querySelector('.more').addEventListener('click',function(){
-            document.querySelector('.overview .card3').style.display = 'block';
-            document.querySelector('.overview .card4').style.display = 'block';
-            this.style.display = 'none'
-        })
+        setFlowBanner();
     });

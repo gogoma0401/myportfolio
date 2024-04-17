@@ -627,7 +627,7 @@ input:focus {
 footer {
     background-color: #9e0821;
     color: #fff;
-    padding: 0px 150px 40px;
+    padding: 0px 60px 40px;
 }
 
 .container {
@@ -649,8 +649,9 @@ footer {
 }
 
 .container ul {
+    width: 60%;
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
 }
 
 footer p {

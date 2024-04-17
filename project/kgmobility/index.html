@@ -21,6 +21,8 @@
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- 스와이퍼 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -72,17 +74,17 @@
                 </li>
             </ul>
             <div class="icon_box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        </div>
-        
+
     </header>
-    
+
     <main>
         <section class="slide_box">
-            <div class="swiper mySwiper" data-swiper-autoplay="2000">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="./imgaes/slide5.jpg" alt="">
@@ -123,14 +125,10 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
-
-            </div>
-            <div class="img_box">
-                <img src="./imgaes/back1.png" alt="">
             </div>
         </section>
         <section class="model_container">
-            <p>Model</p>
+            <h2>Model</h2>
             <p class="intro">최근 한달동안 고객님들이 가장 많이 구매하신 모델입니다.</p>
             <div class="model_txt">
                 <ul>
@@ -172,7 +170,7 @@
         </section>
         <section>
             <div class="electric">
-                <p>Electric Car</p>
+                <h2>Electric Car</h2>
                 <p>지구 환경을 품은 KG모빌리티의 미래를 경험해 보세요</p>
                 <div class="electric_box">
                     <div class="img_box">
@@ -181,7 +179,8 @@
                     <div class="img_txt">
                         <h2>TORRES EVX</h2>
                         <P>내가만드는 세상</P>
-                        <P><span class="app-down">고속도로/자동차 전용도로 주행 시 선행차량과의 거리를 유지하며 </span>운전자가 설정한 속도 및 안전 속도에 맞춰, 차로 중앙을 유지하며 주행하도록 도와줍니다.</P>
+                        <P><span class="app-down">고속도로/자동차 전용도로 주행 시 선행차량과의 거리를 유지하며 </span>운전자가 설정한 속도 및 안전 속도에 맞춰, 차로
+                            중앙을 유지하며 주행하도록 도와줍니다.</P>
                         <button>자세히 보기</button>
                     </div>
                 </div>
@@ -189,7 +188,7 @@
         </section>
         <section>
             <div class="brand">
-                <p>brand</p>
+                <h2>brand</h2>
                 <p>지속가능한 미래로의 연결을 추구하는 KG모빌리티 브랜드 캠패인을 만나보세요</p>
                 <div class="img_boxs">
                     <div class="img_box img_box1">
@@ -206,7 +205,7 @@
         </section>
         <section>
             <div class="overview">
-                <p>Model Overview</p>
+                <h2>Model Overview</h2>
                 <ul>
                     <li>최근 출시</li>
                     <li>연비 효율</li>
@@ -321,45 +320,44 @@
             </div>
         </section>
         <section>
-            <p class="driver">드라이빙 시스템</p>
-            <div class="drive">
-                <div class="animation_box">
-                    <div class="guide_box">
-                        <div class="img_point">
-                            <p>더욱 안전하고 <span class="linebreaking">즐거운 드라이빙</span> </p>
-                            <p>KG 모빌리티의 다양한 운전자 보조 시스템<span class="linebreaking">으로 더욱 안전하고 즐거운 드라이빙을</span><span class="linebreaking">경험 할 수 있습니다.</span> </p>
+            <h2>드라이빙 시스템</h2>
+            <div class="drive_banner">
+                <ul class="list">
+                    <li>
+                        <p>더욱 안전하고 <span class="linebreaking">즐거운 드라이빙</span> </p>
+                        <p>KG 모빌리티의 다양한 운전자 보조 시스템<span class="linebreaking">으로 더욱 안전하고 즐거운 드라이빙을</span><span
+                                class="linebreaking">경험 할 수 있습니다.</span> </p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="./imgaes/drive1.jpg" alt="">
                         </div>
-                        <div class="img_point">
-                            <div class="img_box">
-                                <img src="./imgaes/drive1.jpg" alt="">
-                            </div>
-                            <p>어댑티브크루즈 컨트롤</p>
+                        <p>어댑티브크루즈 컨트롤</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="./imgaes/drive2.jpg" alt="">
                         </div>
-                        <div class="img_point">
-                            <div class="img_box">
-                                <img src="./imgaes/drive2.jpg" alt="">
-                            </div>
-                            <p>긴급제동 보조 시스템(AEBS, 보행자 감지포함)</p>
+                        <p>긴급제동 보조시스템(보행자 감지포함)</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="./imgaes/drive4.jpg" alt="">
                         </div>
-                        <div class="img_point">
-                            <div class="img_box">
-                                <img src="./imgaes/drive4.jpg" alt="">
-                            </div>
-                            <p>전방 추돌 경보 시스템(FCW)</p>
+                        <p>전방 추돌 경보 시스템(FCW)</p>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="./imgaes/drive5.jpg" alt="">
                         </div>
-                        <div class="img_point">
-                            <div class="img_box">
-                                <img src="./imgaes/drive5.jpg" alt="">
-                            </div>
-                            <p>차선이탈 방지 프로그램</p>
-                        </div>
-                    </div>
-                </div>
+                        <p>차선이탈 방지 프로그램</p>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="n_news">
             <div class="news">
-                <p>브랜드 소식</p>
+                <h2>브랜드 소식</h2>
             </div>
             <div class="video_container">
                 <iframe width="560" height="315"
@@ -369,7 +367,7 @@
                     allowfullscreen></iframe>
             </div>
             <div class="app">
-                <p>MyKG 모빌리티</p>
+                <h2>MyKG 모빌리티</h2>
                 <p>이제, 단순히 APP을 넘어서 당신의 키라이프를 책임질 <span class="linebreaking">'라이프 플랫폼myKG모빌리티'를 만나보세요.</span></p>
                 <div class="control_box">
                     <div class="box">
@@ -455,8 +453,24 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const swiper = new Swiper('.swiper', {
+                // Swiper 옵션 설정
+                direction: 'horizontal',
+                loop: true,
 
+                // 필요한 경우 추가 옵션
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        });
+    </script>
 </body>
 
 </html>

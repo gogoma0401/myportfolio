@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // 헤더 inner 표시
         if (window.scrollY <= twoHeight - 200) {
             $inner.style.maxWidth = '58%';
-            $inner.style.backgroundColor = '#67676715';
+            $inner.style.backgroundColor = '#6666666b';
         } else {
             $inner.style.maxWidth = '81%';
-            $inner.style.backgroundColor = 'rgba(173, 173, 173, 0.332)';
+            $inner.style.backgroundColor = '#666';
         }
 
         // 헤더 링크 색상 변경

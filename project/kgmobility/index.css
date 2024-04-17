@@ -12,6 +12,21 @@ ul {
     list-style: none;
 }
 
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.75rem;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+}
+
 img {
     vertical-align: middle;
 }
@@ -123,7 +138,6 @@ header .icon_box {
 .swiper {
     width: 100%;
     height: 100vh;
-
 }
 
 .swiper-slide img {
@@ -175,7 +189,19 @@ header .icon_box {
     font-size: 48px;
     margin: 0;
 }
-
+.slide_box .img-box{
+    z-index: 999;
+    width: 500px;
+    position: absolute;
+    right: 0;
+    top: 73%;
+}
+.slide_box .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 999;
+}
 .model_container {
     position: relative;
     width: 100%;
@@ -185,11 +211,6 @@ header .icon_box {
     text-align: center;
 }
 
-.model_container p:nth-child(1) {
-    font-family: 'NotoSansKR-SemiBold', sans-serif;
-    font-size: 44px;
-}
-
 .model_container .intro {
     margin-bottom: 50px;
 }
@@ -197,9 +218,8 @@ header .icon_box {
 .model_txt {
     position: absolute;
     width: 250px;
-    top: 38%;
+    top: 52%;
     left: 48%;
-    padding-left: 9px;
     transform: translateY(-50%);
 
 }
@@ -223,27 +243,37 @@ header .icon_box {
     background-color: #666;
 }
 
+.model_txt ul li:nth-child(4):before {
+    display: none;
+}
+
 .model {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 50px;
+    gap: 2%
 }
 
 .model .model_img1 .img_box {
-    width: 550px;
-    height: 570px;
+    width: 28.6458vw;
+    height: 29.6875vw;
+    min-width: 270px;
+    min-height: 270px;
 
 }
 
 .model .model_img2 .img_box {
-    width: 310px;
-    height: 285px;
+    width: 16.1458vw;
+    height: 14.8438vw;
+    min-width: 150px;
+    min-height: 150px;
 }
 
 .model .model_img3 .img_box {
-    width: 310px;
-    height: 285px;
+    width: 16.1458vw;
+    height: 14.8438vw;
+    min-width: 150px;
+    min-height: 150px;
 }
 
 .model .img_box img {
@@ -254,11 +284,10 @@ header .icon_box {
 
 .model .model_img1 p {
     position: absolute;
-    top: 38%;
+    top: 55%;
     left: 48%;
     transform: translateY(-50%);
-    font-size: 40px;
-    padding-left: 9px;
+    font-size: 2.5rem;
 }
 
 .model_container .slide_button .bar {
@@ -303,13 +332,13 @@ header .icon_box {
     transition: background-color 0.5s ease;
 }
 
-.electric>p {
-    text-align: center;
+.electric {
+    width: 100%;
 }
 
-.electric p:nth-child(1) {
-    font-family: 'NotoSansKR-SemiBold', sans-serif;
-    font-size: 44px;
+.electric>p {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .electric_box {
@@ -330,16 +359,21 @@ header .icon_box {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 100px;
+    padding: 70px;
+    box-sizing: border-box;
 }
 
 .electric_box .img_txt h2 {
-    font-size: 44px;
-    margin-bottom: 10px;
+    text-align: left;
+    padding-top: 0;
+}
+
+.electric_box .img_txt p:nth-of-type(1) {
+    padding-bottom: 10px;
 }
 
 .electric_box .img_txt p:nth-of-type(2) {
-    width: 65%;
+    width: 75%;
 }
 
 .electric_box button {
@@ -357,6 +391,9 @@ header .icon_box {
     font-weight: bold;
 }
 
+.brand {
+    width: 100%;
+}
 
 .brand p {
     text-align: center;
@@ -364,34 +401,37 @@ header .icon_box {
 
 .brand p:nth-child(1) {
     font-family: 'NotoSansKR-SemiBold', sans-serif;
-    font-size: 44px;
+    font-size: 2.75rem;
 }
 
 .brand .img_boxs {
+    max-width: 1920px;
+    width: 100%;
+    padding: 20px 100px;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 70px;
+    justify-content: center;
+    gap: 1%;
+    box-sizing: border-box;
 }
 
 .brand .img_boxs .img_box {
-    padding: 0 15px;
+    margin-top: auto;
+    padding: 0 5px;
 }
 
 .brand .img_boxs .img_box1 {
-    padding-top: 362px;
-    max-width: 455px;
-    max-height: 540px;
+    width: 19.5vw;
+    height: 32.0vw;
 }
 
 .brand .img_boxs .img_box2 {
-    padding-top: 59px;
-    max-width: 697px;
-    max-height: 470px;
+    width: 25.3vw;
+    height: 16.5vw;
 }
 
 .brand .img_boxs .img_box3 {
-    max-width: 648px;
-    max-height: 822px;
+    width: 21.4vw;
+    height: 46.5vw;
 }
 
 .brand .img_boxs .img_box img {
@@ -401,13 +441,7 @@ header .icon_box {
 }
 
 .overview {
-    margin-top: 120px;
-}
-
-.overview p {
-    font-family: 'NotoSansKR-SemiBold', sans-serif;
-    font-size: 44px;
-    text-align: center;
+    width: 100%;
 }
 
 .overview>ul {
@@ -432,20 +466,22 @@ header .icon_box {
 }
 
 .card_boxs {
-    margin-top: 50px;
+    max-width: 1920px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    padding: 0 20px;
+    gap: 2%;
+    box-sizing: border-box;
 }
 
 .car_card {
     color: #666;
     border: 1px solid #666;
-    max-width: 425px;
+    max-width: 445px;
     max-height: 842px;
     padding: 20px 25px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .car_card h3 {
@@ -453,15 +489,17 @@ header .icon_box {
 }
 
 .car_card .img_box {
-    margin-top: 50px;
-    margin-bottom: 70px;
+    padding: 16px;
     width: 258px;
     height: 146px;
+    margin: auto;
+
 }
 
 .car_card .img_box img {
     width: 100%;
     height: 100%;
+
     overflow: hidden;
 }
 
@@ -483,8 +521,9 @@ header .icon_box {
 
 .price {
     text-align: right;
-    margin-right: 30px;
+    padding-right: 35px;
     font-size: 28px;
+    box-sizing: border-box;
 }
 
 .price span {
@@ -517,32 +556,33 @@ header .icon_box {
     display: none;
 }
 
-.driver {
-    font-family: 'NotoSansKR-SemiBold', sans-serif;
-    font-size: 44px;
-    text-align: center;
-    margin-top: 250px;
+.drive_banner {
     overflow: hidden;
-}
-
-.drive {
-    overflow: hidden;
-}
-
-.animation_box {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.animation_box .guide_box {
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    animation: roll 30s linear infinite;
+    max-width: 1920px;
+    width: 100%;
+    padding: 30px auto;
 }
 
-@keyframes roll {
+.drive_banner .list {
+    display: flex;
+}
+
+.drive_banner .list>li {
+    max-width: 420px;
+    max-height: 420px;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.drive_banner .list>li p:nth-child(1) {
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+@keyframes flowRolling {
     0% {
         transform: translateX(0);
     }
@@ -552,23 +592,12 @@ header .icon_box {
     }
 }
 
-.guide_box {
-    width: 390px;
-    height: 370px;
+.drive_banner .list .img_box {
+    width: 400px;
+    height: 400px;
 }
 
-.guide_box p:nth-child(1) {
-    font-family: 'NotoSansKR-SemiBold', sans-serif;
-    font-size: 28px;
-    margin: 0;
-}
-
-.img_point {
-    width: 390px;
-    height: 370px;
-}
-
-.img_point .img_box img {
+.drive_banner .list .img_box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -577,13 +606,6 @@ header .icon_box {
 .n_news {
     background: url(./imgaes/back2.png) no-repeat right top;
     background-size: contain;
-}
-
-.news p {
-    font-family: 'NotoSansKR-SemiBold', sans-serif;
-    font-size: 44px;
-    text-align: center;
-    margin-top: 250px;
 }
 
 .video_container {
@@ -608,32 +630,28 @@ header .icon_box {
     padding-bottom: 50px;
 }
 
-.app p {
-    text-align: center;
+.app h2 {
     color: #fff;
 }
 
-.app p:nth-child(1) {
-    font-family: 'NotoSansKR-SemiBold', sans-serif;
-    font-size: 44px;
-    margin-top: 0;
-}
-
-.app p:nth-child(2) {
-    margin-bottom: 70px;
+.app p:nth-of-type(1) {
+    color: #fff;
+    padding: 10px 0 30px;
+    text-align: center;
 }
 
 .control_box {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    padding: 0px 100px;
+    gap: 2%;
+    padding: 0px 90px;
 }
 
 .control_box .box {
-    width: 100%;
     max-width: 372px;
-    height: 297px;
+    min-width: 180px;
+    width: 100%;
+    height: 15.4688vw;
     background-color: #eee;
     position: relative;
 }
@@ -656,14 +674,18 @@ header .icon_box {
 }
 
 footer {
+    width: 100%;
     background-color: #eee;
-    margin-top: 210px;
+    margin-top: 200px;
     padding: 50px 180px;
+    box-sizing: border-box;
 }
 
 footer .main_menu {
+    max-width: 1024px;
+    width: 100%;
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
 }
 
 footer .main_menu>li>a {
@@ -681,6 +703,7 @@ footer .sub-menu li:nth-child(1) {
 
 .foot {
     padding-top: 40px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -702,366 +725,46 @@ footer .sub-menu li:nth-child(1) {
     margin-left: 15px;
 }
 
-@media screen and (max-width : 1400px) {
-    .slide_box .img_box {
-        right: 5%;
-        top: 79%;
-        width: 440px;
-        height: 290px;
-    }
-    .slide_box .img_box img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-    .model_container .slide_button .bar1 {
-        left: 2%;
+@media screen and (max-width: 1400px) {
+    .model_txt {
+        top: 50%;
     }
 
-    .model_container .slide_button .bar2 {
-        right: 2%;
-    }
-
-    .model {
-        gap: 30px;
-
-    }
-
-    .electric_box .img_txt h2 {
-        margin-bottom: 7px;
-    }
-
-    .img_txt p {
-        margin-top: 0;
-    }
-
-    .electric_box button {
-        margin-top: 20px;
+    .model .model_img1 p {
+        top: 54%;
     }
 
     .card_boxs {
-        gap: 22px;
+        max-width: 1400px;
+        width: 100%;
+        padding: 0 40px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
     }
 
     .car_card {
-        color: #666;
-        border: 1px solid #666;
-        max-width: 332px;
-        max-height: 742px;
-        padding: 10px 20px;
-        box-sizing: border-box;
-
-    }
-
-    .car_card h3 {
-        font-size: 22px;
-    }
-
-    .car_card .img_box {
-
-        width: 100%;
-        height: 116px;
-        margin: auto;
-        margin: 50px 0px 70px 0px;
-    }
-
-    .car_card .img_box img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        overflow: hidden;
-    }
-
-
-
-
-}
-
-@media screen and (max-width : 1024px) {
-    .slide_box .img_box {
-        right: 0;
-        top: 79%;
-        width: 400px;
-        height: 270px;
-    }
-    .model .model_img1 .img_box {
-        width: 320px;
-        height: 300px;
-    }
-
-    .model .model_img2 .img_box {
-        width: 210px;
-        height: 195px;
-    }
-
-    .model .model_img3 .img_box {
-        width: 210px;
-        height: 195px;
-    }
-
-    .model_txt {
-        top: 28%;
-        left: 44%;
-    }
-
-    .model .model_img1 p {
-        position: absolute;
-        top: 27%;
-        left: 44%;
-        font-size: 32px;
-    }
-
-    .model_container .slide_button .bar {
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        cursor: pointer;
-    }
-
-    .electric_box .img_txt h2 {
-        font-size: 34px;
-    }
-
-    .electric_box button {
+        flex-basis: calc(50% - 8px);
         margin-bottom: 20px;
     }
-
-    .button_box button {
-        margin-top: 10px;
-        width: 120px;
-        height: 45px;
-        border: none;
-    }
-
-    .guide_box p:nth-child(1) {
-        font-size: 22px;
-    }
-
-    .guide_box p:nth-child(2) {
-        font-size: 16px;
-    }
-
-    .guide_box .linebreaking {
-        display: inline;
-    }
-
-    footer {
-        background-color: #eee;
-        margin-top: 210px;
-        padding: 50px 130px;
-    }
-
-    footer .main_menu {
-        display: flex;
-        gap: 50px;
-    }
 }
 
-@media screen and (max-width : 768px) {
-    header .gnb {
-        gap: 180px;
-    }
-
-    header .list_menu {
-        display: none;
-    }
-
-    header .icon_box {
-        display: block;
-    }
-
-    .mobile .logo_box img {
-        height: 40px;
-        object-fit: contain;
-        filter: brightness(0) invert(1);
-    }
-
-    .mobile .icon_box i {
-        color: #fff;
-    }
-
-    .swiper {
-        width: 100%;
-
-    }
-
-    .swiper-slide img {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .swiper-slide .txt_box p:nth-child(1) {
-        font-size: 21px;
-        margin: 0;
-
-    }
-
-    .swiper-slide .txt_box p:nth-child(2) {
-        font-size: 28px;
-        margin: 0;
-    }
-
-    .slide_box .img_box {
-        display: none;
+@media screen and (max-width: 1024px) {
+    h2 {
+        padding-top: 100px;
+        font-size: 2.375rem;
     }
 
     .model {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .model_container p:nth-child(1) {
-        font-size: 34px;
+        gap: 1%;
     }
 
     .model_txt {
-        position: relative;
-        top: 40%;
-        left: 12%;
+        top: 44%;
     }
 
     .model .model_img1 p {
-        top: 55%;
-        left: 12%;
-        font-size: 21px;
-    }
-
-    .button_box button:nth-child(2) {
-        margin: 10px;
-    }
-
-    .model .model_img3 {
-        margin-left: 150px;
-    }
-
-    .electric p:nth-child(1) {
-        font-size: 34px;
-    }
-
-    .electric_box .img_txt {
-        padding-left: 50px;
-        padding-bottom: 15px;
-    }
-
-    .electric_box .img_txt h2 {
-        font-size: 21px;
-    }
-
-    .electric_box .img_txt p:nth-of-type(2) {
-        width: 80%;
-    }
-
-    .electric_box button {
-        margin-top: 0;
-    }
-
-    .brand p:nth-child(1) {
-        font-size: 34px;
-    }
-
-    .guide_box .img_point:nth-child(1) {
-        display: none
-    }
-
-    .img_point {
-        width: 290px;
-        height: 260px;
-    }
-
-    .overview p {
-        font-size: 34px;
-    }
-
-    .card_boxs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .overview .card3,
-    .overview .card4 {
-        display: none;
-    }
-
-    .more {
-        text-align: center;
-        margin: auto;
-        width: 100px;
-        height: 50px;
-        line-height: 50px;
-        margin-top: 80px;
-        display: block;
-        color: #fff;
-        background-color: #2b2b2b;
-        animation: scaleUpDown infinite 1s;
-    }
-
-    @keyframes scaleUpDown {
-        50% {
-            transform: scale(1.1);
-        }
-    }
-
-    .driver {
-        font-size: 34px;
-    }
-
-    .news p {
-        font-size: 34px;
-    }
-
-    .control_box .box {
-        width: 100%;
-        max-width: 372px;
-        height: 207px;
-        background-color: #eee;
-        position: relative;
-    }
-
-    footer {
-        padding: 30px 20px;
-    }
-
-    footer .main_menu {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-    }
-
-    footer img {
-        transform: scale(0.8);
-    }
-}
-
-@media screen and (max-width : 480px) {
-    .model .model_img1 .img_box {
-        padding-bottom: 20px;
-    }
-
-    .model_txt {
-        width: 300px;
-        left: 14%;
-    }
-
-    .model .model_img1 p {
-        left: 15%;
-    }
-
-    .model .model_img2 .img_box {
-        width: 140px;
-        height: 155px;
-    }
-
-    .model .model_img3 {
-        margin-left: 0;
-    }
-
-    .model .model_img3 .img_box {
-        width: 150px;
-        height: 155px;
+        top: 48%;
+        font-size: 1.875rem;
     }
 
     .model_container .slide_button .bar1 {
@@ -1072,77 +775,394 @@ footer .sub-menu li:nth-child(1) {
         right: 5%;
     }
 
+    .circles .circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .card_boxs {
+        max-width: 1024px;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    .car_card {
+        max-width: 380px;
+        max-height: 812px;
+        padding: 20px 25px;
+        box-sizing: border-box;
+        text-align: center;
+        flex-basis: calc(50% - 8px);
+        margin-bottom: 10px;
+    }
+
+    .drive_banner {
+        overflow: hidden;
+        display: flex;
+        max-width: 1024px;
+        width: 100%;
+        padding: 30px auto;
+    }
+
+    .drive_banner .list>li {
+        max-width: 350px;
+        max-height: 350px;
+        white-space: nowrap;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .drive_banner .list .img_box {
+        width: 310px;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    header .list_menu {
+        display: none;
+    }
+
+    header .icon_box {
+        display: block;
+    }
+
+    header .gnb {
+        max-width: 1024px;
+        width: 100%;
+        font-size: 17px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 15px 25px;
+        box-sizing: border-box;
+    }
+
+    .swiper-slide .txt_box p:nth-child(1) {
+        font-size: 28px;
+    }
+
+    .swiper-slide .txt_box p:nth-child(2) {
+        font-size: 38px;
+    }
+
+    .model_container {
+        position: relative;
+    }
+
+    .model {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .model_container .intro {
+        margin-bottom: 60px;
+    }
+
+    .model_txt {
+        position: absolute;
+        top: 19%;
+        left: 12%;
+    }
+
+    .model .model_img1 p {
+        position: absolute;
+        top: 22%;
+        left: 12%;
+    }
+
+    .model .model_img {
+        padding: 3px;
+    }
+
+    .model .model_img1 .img_box {
+        width: 51.08vw;
+        height: 51.08vw;
+        min-width: 255px;
+        min-height: 255px;
+    }
+
+    .model .model_img2 .img_box {
+        width: 29.8vw;
+        height: 25.5vw;
+        min-width: 130px;
+        min-height: 130px;
+    }
+
+    .model .model_img3 .img_box {
+        width: 33.8vw;
+        height: 30.5vw;
+        min-width: 135px;
+        min-height: 135px;
+    }
+
+
+    .drive_banner {
+        max-width: 780px;
+        width: 100%;
+        padding: 20px auto;
+    }
+
+    .drive_banner .list>li {
+        max-width: 280px;
+        max-height: 280px;
+        white-space: nowrap;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .drive_banner .list .img_box {
+        width: 240px;
+        height: 240px;
+    }
+
+    .car_card {
+        max-width: 310px;
+        max-height: 782px;
+        padding: 10px 15px;
+        flex-basis: calc(50% - 8px);
+        margin-bottom: 10px;
+    }
+
+    .car_card .img_box {
+        padding: 15px;
+        width: 238px;
+        height: 136px;
+    }
+
+    .button_box button {
+        margin-top: 15px;
+        width: 110px;
+        height: 45px;
+    }
+
     .electric_box .img_txt {
-        padding-left: 25px;
-        padding-bottom: 15px;
+        padding: 50px;
     }
 
     .electric_box .img_txt p:nth-of-type(2) {
-        width: 85%;
-    }
-    .app-down{
-        display: none;
-    }
-    .brand .img_boxs .img_box {
-        padding: 0 10px;
+        width: 90%;
     }
 
-    .brand .img_boxs .img_box1 {
-        padding-top: 362px;
-        max-width: 485px;
-        max-height: 500px;
-    }
-
-    .brand .img_boxs .img_box2 {
-        padding-top: 59px;
-        max-width: 727px;
-        max-height: 400px;
-    }
-
-    .brand .img_boxs .img_box3 {
-        max-width: 678px;
-        max-height: 782px;
-    }
-
-    .driver {
-        margin-top: 150px;
-    }
-
-    .news p {
-        font-family: 'NotoSansKR-SemiBold', sans-serif;
-        font-size: 34px;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .app p:nth-child(1) {
-        font-size: 34px;
+    .app p:nth-of-type(1) {
+        color: #666;
     }
 
     .control_box {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
-        padding: 0px 20px;
+        gap: 2%;
+    }
+
+    .control_box .box {
+        flex-basis: calc(50% - 20px);
+        margin: 5px 0;
+    }
+
+    .control_box .box .img_box img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
     }
 
     footer {
-        padding: 30px 10px;
-        font-size: 14px;
+        margin-top: 100px;
+        padding: 30px 80px;
+        box-sizing: border-box;
     }
 
-    footer .main_menu {
+    .foot .logo {
+        width: 150px;
+        height: 60px;
+    }
+
+    .foot .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width: 680px) {
+     .model_txt {
+        position: absolute;
+        top: 21%;
+        left: 12%;
+    }
+
+    .model .model_img1 p {
+        position: absolute;
+        top: 24%;
+        left: 12%;
+    }
+}
+@media screen and (max-width: 580px) {
+     .model_txt {
+        position: absolute;
+        top: 22%;
+        left: 12%;
+    }
+
+    .model .model_img1 p {
+        position: absolute;
+        top: 25%;
+        left: 12%;
+    }
+}
+@media screen and (max-width: 480px) {
+    h2 {
+        padding-top: 60px;
+    }
+
+    .swiper-slide .txt_box p:nth-child(1) {
+        font-size: 22px;
+    }
+
+    .swiper-slide .txt_box p:nth-child(2) {
+        font-size: 28px;
+    }
+
+
+    .model_container .slide_button .bar1 {
+        width: 20px;
+        height: 20px;
+        top: 88%;
+        left: 24%;
+    }
+
+    .model_container .slide_button .bar2 {
+        width: 20px;
+        height: 20px;
+        top: 88%;
+        right: 24%;
+    }
+
+    .electric_box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brand p {
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+
+    .brand .img_boxs {
+        max-width: 480px;
+        width: 100%;
+        padding: 20px 30px;
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 1%;
+        box-sizing: border-box;
     }
 
-    footer .main_menu>li>a {
-        font-size: 16px;
-        font-family: 'NotoSansKR-Bold', sans-serif;
+    .brand .img_boxs .img_box1 {
+        width: 115.8vw;
+        height: 34.0vw;
     }
 
-    footer img {
-        transform: scale(0.7);
+    .brand .img_boxs .img_box2 {
+        width: 141.68vw;
+        height: 18.5vw;
+    }
+
+    .brand .img_boxs .img_box3 {
+        width: 123.4vw;
+        height: 48.5vw;
+    }
+
+    .card_boxs {
+        max-width: 480px;
+        width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    .car_card {
+        max-width: 215px;
+        max-height: 682px;
+        padding: 10px 15px;
+        flex-basis: calc(50% - 8px);
+        margin-bottom: 10px;
+    }
+
+    .car_card .img_box {
+        padding: 15px;
+        width: 158px;
+        height: 86px;
+    }
+
+    .car_card .img_box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .car_card h3 {
+        font-size: 21px;
+        margin: 8px;
+    }
+
+    .price {
+        margin: 5px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .button_box button {
+        margin-top: 5px;
+    }
+
+    .drive_banner .list>li p:nth-child(1) {
+        font-size: 21px;
+        padding-bottom: 5px;
+    }
+
+    .video_container iframe {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        border: none;
+    }
+
+    .car_card .navi ul li a {
+        text-decoration: none;
+        margin-bottom: 7px;
+    }
+
+    .control_box {
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+    }
+
+    .control_box .box {
+        width: 200px;
+        height: 200px;
+        background-color: #eee;
+        margin: 5px 0;
+    }
+
+    footer {
+        margin-top: 70px;
+        padding: 30px 30px;
+        box-sizing: border-box;
     }
 }
