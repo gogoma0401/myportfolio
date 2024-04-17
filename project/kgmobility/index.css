@@ -189,19 +189,22 @@ header .icon_box {
     font-size: 48px;
     margin: 0;
 }
-.slide_box .img-box{
+
+.slide_box .img-box {
     z-index: 999;
     width: 500px;
     position: absolute;
     right: 0;
     top: 73%;
 }
-.slide_box .img-box img{
+
+.slide_box .img-box img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     z-index: 999;
 }
+
 .model_container {
     position: relative;
     width: 100%;
@@ -926,6 +929,10 @@ footer .sub-menu li:nth-child(1) {
         height: 240px;
     }
 
+    .overview>ul {
+        gap: 45px;
+    }
+
     .car_card {
         max-width: 310px;
         max-height: 782px;
@@ -993,8 +1000,9 @@ footer .sub-menu li:nth-child(1) {
         object-fit: contain;
     }
 }
+
 @media screen and (max-width: 680px) {
-     .model_txt {
+    .model_txt {
         position: absolute;
         top: 21%;
         left: 12%;
@@ -1006,8 +1014,9 @@ footer .sub-menu li:nth-child(1) {
         left: 12%;
     }
 }
+
 @media screen and (max-width: 580px) {
-     .model_txt {
+    .model_txt {
         position: absolute;
         top: 22%;
         left: 12%;
@@ -1019,6 +1028,7 @@ footer .sub-menu li:nth-child(1) {
         left: 12%;
     }
 }
+
 @media screen and (max-width: 480px) {
     h2 {
         padding-top: 60px;
@@ -1032,6 +1042,9 @@ footer .sub-menu li:nth-child(1) {
         font-size: 28px;
     }
 
+    .model_container .intro {
+        font-size: 14px;
+    }
 
     .model_container .slide_button .bar1 {
         width: 20px;
@@ -1047,6 +1060,10 @@ footer .sub-menu li:nth-child(1) {
         right: 24%;
     }
 
+    .electric>p {
+        font-size: 14px;
+    }
+
     .electric_box {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1055,6 +1072,7 @@ footer .sub-menu li:nth-child(1) {
     .brand p {
         padding: 0 50px;
         box-sizing: border-box;
+        font-size: 14px;
     }
 
     .brand .img_boxs {
@@ -1082,24 +1100,28 @@ footer .sub-menu li:nth-child(1) {
         height: 48.5vw;
     }
 
+    .overview>ul {
+        gap: 25px;
+    }
+
     .card_boxs {
-        max-width: 480px;
+        max-width: 470px;
         width: 100%;
-        padding: 0 5px;
+        padding: 0 3px;
         box-sizing: border-box;
         flex-wrap: wrap;
     }
 
     .car_card {
-        max-width: 215px;
-        max-height: 682px;
-        padding: 10px 15px;
-        flex-basis: calc(50% - 8px);
+        max-width: 200px;
+        max-height: 582px;
+        padding: 5px;
+        flex-basis: calc(50% - 11px);
         margin-bottom: 10px;
     }
 
     .car_card .img_box {
-        padding: 15px;
+        padding: 10px;
         width: 158px;
         height: 86px;
     }
@@ -1143,6 +1165,7 @@ footer .sub-menu li:nth-child(1) {
     .car_card .navi ul li a {
         text-decoration: none;
         margin-bottom: 7px;
+        font-size: 14px;
     }
 
     .control_box {
