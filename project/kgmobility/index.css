@@ -1101,7 +1101,7 @@ footer .sub-menu li:nth-child(1) {
     }
 
     .overview>ul {
-        gap: 25px;
+        gap: 23px;
     }
 
     .card_boxs {
@@ -1162,6 +1162,10 @@ footer .sub-menu li:nth-child(1) {
         border: none;
     }
 
+    .app h2 {
+        color: #666;
+    }
+
     .car_card .navi ul li a {
         text-decoration: none;
         margin-bottom: 7px;
@@ -1169,7 +1173,7 @@ footer .sub-menu li:nth-child(1) {
     }
 
     .control_box {
-        padding: 0 20px;
+        padding: 0 18px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1177,15 +1181,34 @@ footer .sub-menu li:nth-child(1) {
     }
 
     .control_box .box {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         background-color: #eee;
         margin: 5px 0;
     }
 
     footer {
         margin-top: 70px;
-        padding: 30px 30px;
+        padding: 30px 20px;
         box-sizing: border-box;
+    }
+
+    footer .main_menu {
+        max-width: 480px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .main_menu>li>a {
+        font-size: 16px;
+    }
+
+    footer .main_menu>li a {
+        font-size: 15px;
+    }
+
+    .foot .pack p {
+        font-size: 14px;
     }
 }
