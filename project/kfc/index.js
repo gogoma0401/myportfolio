@@ -32,7 +32,7 @@ $(document).ready(function () {
                 spaceBetween: 2,
             },
             450: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 1,
             },
         },
