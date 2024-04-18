@@ -225,8 +225,6 @@ header {
     transform: translate(-50%, -50%);
     width: 47.11vw;
     height: 31.86vw;
-    min-width: 40px;
-    min-height: 30px;
 }
 
 .load_imgbox img {
@@ -795,7 +793,14 @@ footer {
         padding: 250px 0 80px;
     }
 
-    .with_kfc {}
+    .load_imgbox {
+        position: absolute;
+        top: 95%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        min-width: 40px;
+        min-height: 30px;
+    }
 
     .global {
         padding: 0 40px;
