@@ -21,8 +21,11 @@ $(document).ready(function () {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 4,
         breakpoints: {
+            1920: {
+                slidesPerView: 4,
+                spaceBetween: 3,
+            },
             1024: {
                 slidesPerView: 3,
                 spaceBetween: 2,
