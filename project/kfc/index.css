@@ -814,8 +814,8 @@ footer {
     }
 
     .swiper-slide {
-        width: 250px;
-        height: 300px;
+        width: 350px;
+        height: 310px;
         margin: auto;
         max-width: 100vw;
         max-height: 100vh;
@@ -823,8 +823,8 @@ footer {
     }
 
     .swiper-slide .img-box {
-        width: 220px;
-        height: 220px;
+        width: 320px;
+        height: 320px;
         margin: auto;
     }
 
