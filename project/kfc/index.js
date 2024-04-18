@@ -12,6 +12,22 @@ $(document).ready(function () {
     $('.sub_menu>li').on('mouseleave', function () {
         $(this).css('background-color', '');
     });
+
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".m_txt h1", {
+        scrollTrigger: {
+            trigger: ".message-slide",
+            start: "bottom 32%",
+            end: "60% 50%",
+            scrub: 1,
+            // markers:true,
+        },
+        scale:1.4,
+        color: '#ddd',
+        x: -400,
+        duration: 0.5,
+    });
     // 이미지 배열
     let swiper = new Swiper(".mySwiper", {
         pagination: {
@@ -38,9 +54,9 @@ $(document).ready(function () {
                 slidesPerView: 4,
                 spaceBetween: 3,
             },
-            
-            
-            
+
+
+
         },
         coverflowEffect: {
             rotate: 50,
