@@ -241,6 +241,7 @@ header {
     text-align: center;
     margin: auto;
     padding-top: 300px;
+    padding-bottom: 150px;
 }
 
 .best.animated {
@@ -576,10 +577,6 @@ footer {
 @media screen and (max-width: 1400px) {
     h1 {
         font-size: 15rem;
-    }
-
-    .best {
-        height: 65vh;
     }
 
     .with_kfc {
