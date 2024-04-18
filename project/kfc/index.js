@@ -47,7 +47,7 @@ $(document).ready(function () {
         observer: true,
         observeParents: true,
     });
-
+    swiper.update()
     var images = document.querySelectorAll('.load_imgbox img');
     var check = 0;
 
