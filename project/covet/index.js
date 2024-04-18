@@ -1,56 +1,56 @@
 window.onload = () => {
-  const Slider = function(pages, pagination) {
-    let slides = [],
-        btns = [],
-        count = 0,
-        current = 0,
-        touchstart = 0,
-        animation_state = false;
+    const Slider = function (pages, pagination) {
+        let slides = [],
+            btns = [],
+            count = 0,
+            current = 0,
+            touchstart = 0,
+            animation_state = false;
 
-    const init = () => {
-      slides = pages.children;
-      count = slides.length;
-      for(let i = 0; i < count; i++) {
-        slides[i].style.bottom = -(i * 100) + '%';
-        let btn = document.createElement('li');
-        btn.dataset.slide = i;
-        btn.addEventListener('click', btnClick)
-        btns.push(btn);
-        pagination.appendChild(btn);
-      }
-      btns[0].classList.add('active');
-    }
-
-    const gotoNum = (index) => {
-      if((index != current) && !animation_state) {
-        animation_state = true;
-        setTimeout(() => animation_state = false, 500);
-        btns[current].classList.remove('active');
-        current = index;
-        btns[current].classList.add('active');
-        for(let i = 0; i < count; i++) {
-          slides[i].style.bottom = (current - i) * 100 + '%';
+        const init = () => {
+            slides = pages.children;
+            count = slides.length;
+            for (let i = 0; i < count; i++) {
+                slides[i].style.bottom = -(i * 100) + '%';
+                let btn = document.createElement('li');
+                btn.dataset.slide = i;
+                btn.addEventListener('click', btnClick)
+                btns.push(btn);
+                pagination.appendChild(btn);
+            }
+            btns[0].classList.add('active');
         }
-      }
+
+        const gotoNum = (index) => {
+            if ((index != current) && !animation_state) {
+                animation_state = true;
+                setTimeout(() => animation_state = false, 500);
+                btns[current].classList.remove('active');
+                current = index;
+                btns[current].classList.add('active');
+                for (let i = 0; i < count; i++) {
+                    slides[i].style.bottom = (current - i) * 100 + '%';
+                }
+            }
+        }
+
+        const gotoNext = () => current < count - 1 ? gotoNum(current + 1) : false;
+        const gotoPrev = () => current > 0 ? gotoNum(current - 1) : false;
+        const btnClick = (e) => gotoNum(parseInt(e.target.dataset.slide));
+        pages.ontouchstart = (e) => touchstart = e.touches[0].screenY;
+        pages.ontouchend = (e) => touchstart < e.changedTouches[0].screenY ? gotoPrev() : gotoNext();
+        pages.onmousewheel = pages.onwheel = (e) => e.deltaY < 0 ? gotoPrev() : gotoNext();
+
+        init();
     }
 
-    const gotoNext = () => current < count - 1 ? gotoNum(current + 1) : false;
-    const gotoPrev = () => current > 0 ? gotoNum(current - 1) : false;
-    const btnClick = (e) => gotoNum(parseInt(e.target.dataset.slide));
-    pages.ontouchstart = (e) => touchstart = e.touches[0].screenY;
-    pages.ontouchend = (e) => touchstart < e.changedTouches[0].screenY ? gotoPrev() : gotoNext();
-    pages.onmousewheel = pages.onwheel = (e) => e.deltaY < 0 ? gotoPrev() : gotoNext();
-
-    init();
-  }
-
-  let pages = document.querySelector('.pages');
-  let pagination = document.querySelector('.pagination');
-  let slider = new Slider(pages, pagination)
+    let pages = document.querySelector('.pages');
+    let pagination = document.querySelector('.pagination');
+    let slider = new Slider(pages, pagination)
 }
 // 헤더 hover효과
 $(document).ready(function () {
-    
+
     $('.submenu').mouseenter(function () {
         $(this).siblings('a').css('color', 'var(--pupule-color)');
     });
@@ -75,17 +75,12 @@ $(document).ready(function () {
         $('.circle').eq(currentIndex).siblings().css('background-color', '#ffffff3e');
 
         if (currentIndex == 4) {
-            $('.circle').eq(3).css('background-color', '#ffffff3e');
-            setTimeout(function () {
-                $('.circle').eq(0).css('background-color', 'var(--pupule-color)');
-                $('.slider_warp').animate({
-                    marginLeft: 0
-                }, 0); //애니매이션을 정지
-                currentIndex = 0; //현재이미지 초기화  
-            }, 2000);
-            $('.circle').eq(0).css('background-color', 'var(--pupule-color)');
-
-        }
+    currentIndex = 0; // 현재 인덱스를 0으로 초기화
+    $('.slider_warp').animate({
+        marginLeft: 0
+    }, 0); // 애니메이션을 정지
+    $('.circle').eq(0).css('background-color', 'var(--pupule-color)');
+}
     }, 2500)
 
 
@@ -103,17 +98,13 @@ $(document).ready(function () {
 
     circle();
 
-    $('.container2 .menu_icon').click(function () {
+    $('.fa-bars').click(function () {
         $('.menu_full').css('display', 'block');
-        $('.slider_box').css('z-index', '-999');
-        $('.slider_warp').css('z-index', '-999');
-        $('.slider').css('z-index', '-999');
+        $('.slider_box, .slider_warp, .slider').css('z-index', '-999');
     });
-    $('.fa-solid').click(function() {
+    $('.fa-x').click(function () {
         $('.menu_full').css('display', 'none');
-        $('.slider_box').css('z-index', '9');
-        $('.slider_warp').css('z-index', '9');
-        $('.slider').css('z-index', '9');
+        $('.slider_box, .slider_warp, .slider').css('z-index', '9');
     });
 
 
@@ -149,12 +140,46 @@ $(document).ready(function () {
         backgroundColor: "#FAD200",
         duration: 0.5,
     });
+    gsap.from(".step h2", {
+        scrollTrigger: {
+            trigger: ".guide",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 0.5,
+        },
+        x: 800,
+        duration: 1,
+    });
+    gsap.from(".step p", {
+        scrollTrigger: {
+            trigger: ".guide",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+        },
+        y: 800,
+        duration: 2,
+    });
+    gsap.from(".guide .img-box img ", {
+        scrollTrigger: {
+            trigger: ".guide",
+            start: "top center",
+            end: "bottom center",
+            scrub: 1,
+        },
+        x: -200,
+        y: -200,
+        scale: 0.5,
+        rotation: 360,
+        ease: "power1.out",
+        duration: 1,
+    });
     gsap.to(".search", {
         scrollTrigger: {
             trigger: ".plus",
             start: "top bottom",
             end: "bottom top",
-            scrub: 1,
+            scrub: 2,
         },
         backgroundColor: "#FAD200",
         duration: 0.5,
@@ -164,7 +189,7 @@ $(document).ready(function () {
             trigger: ".plus",
             start: "top bottom",
             end: "bottom top",
-            scrub: 1,
+            scrub: 2,
         },
         backgroundColor: "#FAD200",
         duration: 0.5,
@@ -190,5 +215,5 @@ $(document).ready(function () {
         }, 2000); // 2000ms = 2초
     }
 
-     changeImage();
+    changeImage();
 });
