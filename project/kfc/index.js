@@ -22,22 +22,25 @@ $(document).ready(function () {
         grabCursor: true,
         centeredSlides: true,
         breakpoints: {
-            1920: {
-                slidesPerView: 4,
-                spaceBetween: 3,
-            },
-            1024: {
-                slidesPerView: 3,
+            480: {
+                slidesPerView: 1,
                 spaceBetween: 2,
             },
             768: {
                 slidesPerView: 2,
                 spaceBetween: 2,
             },
-            480: {
-                slidesPerView: 1,
+            1024: {
+                slidesPerView: 3,
                 spaceBetween: 2,
             },
+            1920: {
+                slidesPerView: 4,
+                spaceBetween: 3,
+            },
+            
+            
+            
         },
         coverflowEffect: {
             rotate: 50,
