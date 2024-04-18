@@ -641,11 +641,16 @@ footer {
         top: 81%;
         left: 35%;
     }
-    .swiper-slide{
+
+    .swiper-slide {
         width: 380px;
         height: 320px;
         margin: auto;
+        max-width: 100vw;
+        max-height: 100vh;
+        margin: auto;
     }
+
     .swiper-slide .img-box {
         width: 340px;
         height: 300px;
@@ -751,6 +756,21 @@ footer {
         display: none;
     }
 
+    .swiper-slide {
+        width: 250px;
+        height: 300px;
+        margin: auto;
+        max-width: 100vw;
+        max-height: 100vh;
+        margin: auto;
+    }
+
+    .swiper-slide .img-box {
+        width: 240px;
+        height: 240px;
+        margin: auto;
+    }
+
     .with_kfc {
         padding: 50px 0;
     }
@@ -791,6 +811,21 @@ footer {
         transform: translate(-50%, -50%);
         width: 57.11vw;
         height: 38.86vw;
+    }
+
+    .swiper-slide {
+        width: 250px;
+        height: 300px;
+        margin: auto;
+        max-width: 100vw;
+        max-height: 100vh;
+        margin: auto;
+    }
+
+    .swiper-slide .img-box {
+        width: 220px;
+        height: 220px;
+        margin: auto;
     }
 
     .best {

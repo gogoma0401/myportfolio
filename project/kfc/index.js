@@ -33,7 +33,7 @@ $(document).ready(function () {
             },
             480: {
                 slidesPerView: 1,
-                spaceBetween: 1,
+                spaceBetween: 2,
             },
         },
         coverflowEffect: {
