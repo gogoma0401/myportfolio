@@ -9,7 +9,10 @@ img {
     vertical-align: middle;
 }
 
-ul {
+ul,
+p,
+li,
+a {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -18,6 +21,20 @@ ul {
 a {
     color: #fff;
     text-decoration: none;
+}
+
+h1 {
+    font-family: 'Giants-Inline', sans-serif;
+    font-size: 18.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.375rem;
+    font-family: 'Giants-Bold', sans-serif;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .line {
@@ -48,12 +65,12 @@ header {
 }
 
 .gnb .gnb_img {
-    display: flex;
-    align-items: center;
+    width: 130px;
 }
 
 .gnb .gnb_img img {
-    width: 130px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -66,7 +83,7 @@ header {
     position: relative;
     text-align: center;
     width: 180px;
-    height: 35 px;
+    height: 35px;
     line-height: 35px;
 }
 
@@ -140,71 +157,13 @@ header {
     object-fit: contain;
 }
 
-.slide {
-    background-color: #9e0821;
-    height: 250px;
-    padding-top: 150px;
-
-}
-
-.message {
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    position: relative;
-
-}
-
-.back_img {
-    width: 550px;
-    position: absolute;
-    top: 0;
-    left: 15%;
-}
-
-.back_img img {
-    object-fit: contain;
-    width: 100%;
-    transform: rotate(-10deg);
-}
-
-.message p {
-    margin: 0;
-}
-
-.message .m_txt {
-    position: absolute;
-    color: #fff;
-    top: 25%;
-    left: 15%;
-}
-
-.message .m_txt p:nth-child(1) {
-    /* 72 140 36 */
-    /* font-family: 'Giants-Bold',sans-serif; */
-    font-family: 'Giants-Regular', sans-serif;
-    /* font-family: 'Giants-Inline',sans-serif; */
-    font-size: 36px;
-}
-
-.message .m_txt p:nth-child(2) {
-    font-family: 'Giants-Bold', sans-serif;
-    font-size: 78px;
-}
-
-.message .m_txt p:nth-child(3) {
-    font-family: 'Giants-Regular', sans-serif;
-    font-size: 24px;
-}
-
 /* 파도물결 css */
 .event_wrap {
     overflow: hidden;
     position: relative;
     margin: 0 auto;
     width: 100%;
-    height: 300px;
+    height: 250px;
     background: #9e0821;
     z-index: -999;
 }
@@ -237,27 +196,35 @@ header {
     }
 }
 
-
-.kfc_icon {
-    width: 130px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotate(50deg);
-    z-index: 9;
+.message-slide {
+    position: relative;
+    padding-bottom: 140px;
 }
 
-.kfc_icon img {
-    width: 100%;
-    object-fit: contain;
+.m_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 85%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+
+}
+
+.m_txt h1 {
+    color: #9c2531;
 }
 
 .load_imgbox {
     position: absolute;
-    top: 12%;
-    right: 5%;
-    width: 910px;
-    height: 610px;
+    top: 95%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 47.11vw;
+    height: 31.86vw;
 }
 
 .load_imgbox img {
@@ -268,14 +235,11 @@ header {
     display: none;
 }
 
-.mySwiper {
-    display: none;
-}
-
 .best {
     width: 100%;
+    height: 90vh;
     text-align: center;
-    padding-bottom: 300px;
+    padding: 400px 0 150px;
     margin: auto;
 }
 
@@ -283,107 +247,47 @@ header {
     opacity: 1;
 }
 
-.best h2 {
-    font-family: 'Giants-Bold', sans-serif;
-    margin-top: 280px;
-    font-size: 45px;
-}
-
-.box {}
-
-.card_box {
-    max-width: 1920px;
-    padding: 0 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.card1 {
-    width: 540px;
-}
-
-.card1 img {
-    width: 100%;
-}
-
-.card1 .txt_box {
-    margin: auto;
-}
-
-.box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 30px;
-}
-
-.card .txt_box {
-    width: 85%;
-    margin: auto;
-}
-
-.card2,
-.card3,
-.card4,
-.card5 {
-    width: 280px;
-    height: 350px;
+.swiper-slide {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
 
 }
 
-.card2 img,
-.card3 img,
-.card4 img,
-.card5 img {
+.swiper-slide .img-box {
+    max-width: 400px;
+    max-height: 300px;
     width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .img-box img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
-
-.best button {
-    width: 120px;
-    height: 40px;
-    background-color: #fe9f2b;
-    color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    border: none;
-    box-shadow: #fe9f2b41 0px 7px 10px 0px;
-    margin-top: 50px;
+.swiper-pagination-bullet-active {
+    background-color: #9e0821 !important;
 }
 
 .order {
+    max-width: 1920px;
     width: 100%;
-    height: 200px;
-    padding: 30px 0px 80px 0px;
+    height: 180px;
     background: #9e0821;
     color: #fff;
     position: relative;
-
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
     flex-direction: row;
-}
-
-.info p {}
-
-.info h2 {
-    font-family: 'Giants-Bold', sans-serif;
-    font-size: 36px;
-    margin: 0;
-    margin-bottom: 20px;
+    position: relative
 }
 
 .app {
@@ -392,31 +296,29 @@ header {
 
 .app .app_img1,
 .app .app_img2 {
-    position: absolute;
-
-}
-
-.app .app_img1 img {
-    width: 240px;
-    object-fit: contain;
     animation: up 3s linear infinite;
 }
 
-.app .app_img2 img {
-    width: 300px;
-    object-fit: contain;
-    animation: up 3s linear infinite;
-}
 
 .app .app_img1 {
-    top: -45%;
-    left: 50%;
+    width: 12.01vw;
     z-index: 9;
 }
 
 .app .app_img2 {
-    top: -70%;
-    left: 60%;
+    width: 13.98vw;
+}
+
+.app .app_img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.app .app_img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 @keyframes up {
@@ -448,7 +350,8 @@ header {
 }
 
 .with_kfc {
-    margin: 200px 0px;
+    width: 100%;
+    padding: 150px 0;
     display: flex;
     justify-content: center;
 }
@@ -460,17 +363,9 @@ header {
     align-items: center;
     justify-content: center;
     padding: 50px 20px;
-    border-radius: 50px;
-}
-
-.global h2 {
-    font-family: 'Giants-Regular', sans-serif;
-    font-size: 36px;
-    margin: 0;
 }
 
 .global p {
-    margin: 5px 0px;
     width: 60%;
 }
 
@@ -484,11 +379,11 @@ header {
     margin-bottom: 20px;
 }
 
-.global_brand .with_img {
+.global_brand .img-box {
     width: 350px;
 }
 
-.global_brand .with_img img {
+.global_brand .img-box img {
     width: 100%;
     object-fit: contain;
 }
@@ -505,56 +400,57 @@ header {
 }
 
 .puzzle_box {
+    width: 100%;
     padding-bottom: 100px;
 }
 
 .puzzle_box h2 {
-    font-family: 'Giants-Regular', sans-serif;
-    font-size: 45px;
     text-align: center;
 }
 
 .puzzle {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
+    width: 100%;
+    display: grid;
+    margin-bottom: 150px;
+    margin: auto;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
 }
 
-.puz {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.banner:nth-child(1) {
+    grid-area: header;
 }
 
-.puzzle .p_img {
+.banner:nth-child(2) {
+    grid-area: sidebar;
+}
+
+.banner:nth-child(3) {
+    grid-area: main;
+}
+
+.banner:nth-child(4) {
+    grid-area: footer;
+}
+
+.banner {
     position: relative;
-    overflow: hidden;
-
 }
 
-.puzzle .p_img img {
+.banner .img-box {
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: 0.5s linear;
     cursor: pointer;
-}
-
-.puzzle .p_img1 img {
-    height: 530px;
-    object-fit: contain;
-    filter: brightness(50%)
-}
-
-.puzzle .p_img2 img {
-    width: 530px;
-    object-fit: contain;
-    filter: brightness(50%)
-}
-
-.puzzle .p_img3 img {
-    width: 530px;
-    object-fit: contain;
     filter: brightness(50%)
 }
 
@@ -567,27 +463,28 @@ header {
     flex-direction: column;
 }
 
-.p_txt p:nth-child(1) {
-    font-family: 'Giants-Bold', sans-serif;
-    font-size: 40px;
-    margin: 0;
+.p_txt h2 {
+    text-align: left;
 }
 
 .p_txt p:nth-child(2) {
     margin: 0;
 }
 
-.puzzle .p_img:hover img {
+.banner:hover img {
     transform: scale(1.2);
     filter: brightness(70%)
 }
 
 .email_box {
+    max-width: 1920px;
+    width: 100%;
     position: relative;
 }
 
 .email_box img {
     width: 100%;
+    height: 100%;
 }
 
 .email_item {
@@ -598,12 +495,12 @@ header {
 }
 
 .email_item input[type=email] {
-    width: 370px;
-    height: 55px;
+    width: 570px;
+    height: 70px;
     border: none;
-    border-radius: 50px;
     position: relative;
     padding-left: 20px;
+    font-size: 20px;
 }
 
 input:focus {
@@ -615,22 +512,26 @@ input:focus {
     top: 50%;
     right: 5%;
     transform: translateY(-50%);
-    width: 100px;
-    height: 35px;
+    width: 120px;
+    height: 55px;
     background-color: #fe9f2b;
     color: #fff;
-    border-radius: 50px;
     text-align: center;
     border: none;
+    font-size: 20px;
 }
 
 footer {
+    width: 100%;
     background-color: #9e0821;
     color: #fff;
-    padding: 0px 60px 40px;
+    padding: 0px 80px 40px;
+    box-sizing: border-box;
 }
 
 .container {
+    max-width: 1920px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -648,95 +549,53 @@ footer {
     object-fit: contain;
 }
 
-.container ul {
-    width: 60%;
+.container>ul {
+    display: flex;
+}
+
+.container>ul li {
+    padding-left: 80px;
+}
+
+.container2 {}
+
+.container2>ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-footer p {
-    margin: 0;
-}
-
-footer .last {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-footer .last li:nth-child(1) span {
+.container2>ul li span {
     font-family: 'Giants-Bold', sans-serif;
-    font-size: 30px;
+    font-size: 32px;
 }
 
-footer .last li:nth-child(2) {
-    font-size: 25px;
-}
-
-footer .last li:nth-child(2) i {
-    margin-right: 30px;
+.container2>ul li i {
+    font-size: 32px;
+    padding-left: 20px;
 }
 
 @media screen and (max-width: 1400px) {
-    
-    .back_img {
-        left: 8%;
+    h1 {
+        font-size: 15rem;
     }
 
-    .load_imgbox {
-        position: absolute;
-        top: 22%;
-        right: 3%;
-        width: 700px;
-        height: 500px;
+    .best {
+        height: 80vh;
+        padding: 380px 0 120px;
     }
 
-
-    .message .m_txt p:nth-child(1) {
-        font-size: 28px;
-    }
-
-    .message .m_txt p:nth-child(2) {
-        font-size: 82px;
-    }
-
-    .message .m_txt p:nth-child(3) {
-        font-size: 21px;
-    }
-
-    .best h2 {
-        margin-top: 240px;
-    }
-
-    .app .app_img1 img {
-        width: 210px;
-    }
-
-    .app .app_img2 img {
-        width: 260px;
-    }
-
-    .order {
-        width: 100%;
-        height: 170px;
-    }
-
-    .global_brand {
-        padding: 50px 40px;
-    }
-
-    .global p {
-        width: 65%;
-    }
-
-    .global p:nth-child(2) {
-        font-size: 21px;
-        width: 50%;
+    .with_kfc {
+        padding: 130px 0;
     }
 
 }
 
 @media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 13rem;
+    }
+
     .main_menu {
         display: none;
     }
@@ -765,13 +624,13 @@ footer .last li:nth-child(2) i {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 28px;
+        font-size: 1.75rem;
         font-family: 'Giants-Bold', sans-serif;
         color: #fff;
     }
 
     .app_sub ul li {
-        padding: 7px;
+        padding: 5px;
         text-align: center;
         width: 100%;
     }
@@ -780,258 +639,178 @@ footer .last li:nth-child(2) i {
         background-color: #fe9f2b;
     }
 
-    .slide {
-        background-color: #9e0821;
-        height: 220px;
-        padding-top: 150px;
-    }
-
-    .message {
-        height: 220px;
-    }
-
-    .back_img {
-        width: 440px;
-        top: 0;
-        left: 10%;
-    }
-
-    .message .m_txt p:nth-child(2) {
-        font-size: 60px;
-    }
-
-    .kfc_icon img {
-        display: none;
-    }
-
-    .card_box {
-        padding: 0 60px;
-    }
-
-    .card1 {
-        display: none;
-    }
-
-    .more {
-        margin: 40px 0;
+    .m_txt {
+        top: 81%;
+        left: 35%;
     }
 
     .load_imgbox {
-        position: absolute;
-        top: 22%;
-        right: 2%;
-        width: 620px;
-        height: 420px;
+        width: 55.732vw;
+        height: 37.8312vw;
     }
-}
 
-@media screen and (max-width: 768px) {
-
-    .slide {
-        height: 70vh;
-    }
 
     .best {
+        height: 60vh;
+        padding: 300px 0 80px;
+    }
+
+    .order .app {
         display: none;
-    }
-
-    .mySwiper {
-        display: block;
-    }
-
-    .load_imgbox {
-        position: absolute;
-        top: 32%;
-        right: 2%;
-        width: 420px;
-        height: 370px;
-    }
-
-    swiper-container {
-        width: 100%;
-        padding-top: 150px;
-        padding-bottom: 250px;
-        position: relative;
-    }
-
-    swiper-container::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        background-color: #fe9f2b;
-    }
-
-    swiper-container:after {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100%;
-        background-color: #fe782b;
-        z-index: -999;
-    }
-
-
-    swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 400px;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #f8f8f8e5;
-        border-radius: 40px;
-        box-shadow: #cacaca88 0px 7px 10px 0px;
-        margin-bottom: 50px;
-    }
-
-    swiper-slide img {
-        display: block;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    swiper-slide .txt_box {
-        width: 240px;
-    }
-
-    .card3,
-    .card4 {
-        width: 100%;
-    }
-
-    .card3 img,
-    .card4 img {
-        width: 350px;
-    }
-
-    .app {
-        z-index: 9;
-    }
-
-    .global p:nth-child(2) {
-        font-size: 16px;
-        width: 60%;
     }
 
     .puzzle {
-        gap: 10px;
+        width: 100%;
+        display: grid;
+        margin-bottom: 150px;
+        margin: auto;
+        grid-template-rows: repeat(1, 300px);
+        grid-template-areas:
+            "header main"
+            "sidebar footer";
     }
 
-    .puzzle .p_img1 img {
-        height: 355px;
-        object-fit: contain;
-        filter: brightness(50%);
+    .global p:nth-child(2) {
+        font-size: 21px;
+        width: 70%;
     }
 
-    .puzzle .p_img2 img {
-        width: 350px;
-        object-fit: contain;
-        filter: brightness(50%);
+    .global p {
+        width: 75%;
     }
 
-    .puzzle .p_img3 img {
-        width: 350px;
-        object-fit: contain;
-        filter: brightness(50%);
+    .email_item input[type=email] {
+        width: 380px;
+        height: 55px;
+        padding-left: 10px;
+        font-size: 16px;
     }
 
-    .p_txt p:nth-child(1) {
-        font-size: 28px;
+    .email_item button {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        transform: translateY(-50%);
+        width: 120px;
+        height: 38px;
+        font-size: 16px;
     }
 
     footer {
+        width: 100%;
         background-color: #9e0821;
         color: #fff;
-        padding: 0px 50px 50px;
+        padding: 0px 60px 20px;
+        box-sizing: border-box;
+    }
+
+    .container>ul li {
+        padding-left: 40px;
+    }
+
+    .container2>ul li span {
+        font-size: 24px;
+    }
+
+    .container2>ul li i {
+        font-size: 28px;
+        padding-left: 20px;
     }
 
 }
 
-@media screen and (max-width: 480px) {
-    .gnb {
-        padding: 40px;
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 10rem;
     }
 
-    .back_img {
-        width: 340px;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%);
+    .m_txt {
+        top: 79%;
+        left: 37%;
     }
 
     .load_imgbox {
         position: absolute;
-        top: 50%;
-        right: 2%;
-        width: 300px;
-        height: 240px;
+        top: 99%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        width: 47.11vw;
+        height: 31.86vw;
     }
 
-    .app .app_img1,
-    .app .app_img2 {
-        display: none;
+    .with_kfc {
+        padding: 50px 0;
     }
 
-    .order {
-        width: 100%;
-        height: 170px;
-        justify-content: center;
-    }
-
-    .global {
-        padding-left: 40px;
-    }
-
-    .global_brand .with_img {
-        display: none;
-    }
-
-    .global p {
-        width: 80%;
+    .global_brand {
+        width: 85%;
+        padding: 40px 10px;
     }
 
     .global p:nth-child(2) {
-        font-size: 16px;
-        width: 80%;
+        font-size: 17px;
+        width: 70%;
     }
 
-    .puzzle_box h2 {
-        margin: 0;
-        font-size: 35px;
+    .global p:nth-child(3) {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .m_txt {
+        top: 79%;
+        left: 47%;
     }
 
-    .puzzle .p_img {
-        border-radius: 50px;
+    .load_imgbox {
+        position: absolute;
+        top: 100%;
+        left: 67%;
+        transform: translate(-50%, -50%);
+        width: 57.11vw;
+        height: 38.86vw;
     }
 
-    .puzzle .p_img1 img {
-        width: 350px;
-        height: auto;
+    .best {
+        height: 50vh;
+        padding: 250px 0 80px;
+    }
+
+    .with_kfc {}
+
+    .global {
+        padding: 0 70px;
+        box-sizing: border-box;
+    }
+
+    .global_brand .img-box {
+        display: none;
+    }
+
+    .global p:nth-child(2) {
+        font-size: 17px;
+        width: 85%;
+    }
+
+    .global p {
+        width: 90%;
     }
 
     footer {
-        padding: 0px 20px 20px;
+        width: 100%;
+        background-color: #9e0821;
+        color: #fff;
+        padding: 0px 50px 10px;
+        box-sizing: border-box;
     }
 
-    .container .foot_logo {
-        width: 80px;
+    .container>ul {
+        display: none;
     }
 
-    .container ul {
-        display: flex;
-        gap: 15px;
-        font-size: 14px;
-    }
-
-    footer .last li:nth-child(1) span {
-        font-size: 24px;
+    .container2>ul {
+        padding-top: 5px;
     }
 }
