@@ -237,10 +237,10 @@ header {
 
 .best {
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     text-align: center;
-    padding: 400px 0 150px;
     margin: auto;
+    padding-top: 300px;
 }
 
 .best.animated {
@@ -579,8 +579,7 @@ footer {
     }
 
     .best {
-        height: 80vh;
-        padding: 380px 0 120px;
+        height: 65vh;
     }
 
     .with_kfc {
@@ -664,8 +663,6 @@ footer {
 
 
     .best {
-        height: 40vh;
-        padding: 300px 0 80px;
     }
 
     .order .app {
@@ -826,11 +823,6 @@ footer {
         width: 320px;
         height: 320px;
         margin: auto;
-    }
-
-    .best {
-        padding: 250px 0 80px;
-        padding-bottom: 100px;
     }
 
     .global {

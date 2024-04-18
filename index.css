@@ -769,16 +769,20 @@ h2 {
 }
 
 .guide {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     background-color: #fff;
     border-radius: 50%;
     margin-bottom: 20px;
 }
-
+.guide a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 .guideto {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     background-color: #a5fa70;
     box-shadow: 0 0 10px rgba(165, 250, 112, 0.763);
 }
