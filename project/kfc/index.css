@@ -784,20 +784,15 @@ footer {
         top: 100%;
         left: 67%;
         transform: translate(-50%, -50%);
+        width: 57.11vw;
+        height: 38.86vw;
     }
 
     .best {
         height: 50vh;
         padding: 250px 0 80px;
     }
-
-    .load_imgbox {
-        position: absolute;
-        top: 95%;
-        left: 65%;
-        transform: translate(-50%, -50%);
-    }
-
+    
     .global {
         padding: 0 40px;
         box-sizing: border-box;

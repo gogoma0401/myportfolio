@@ -31,7 +31,7 @@ $(document).ready(function () {
                 slidesPerView: 2,
                 spaceBetween: 2,
             },
-            450: {
+            480: {
                 slidesPerView: 1,
                 spaceBetween: 1,
             },
