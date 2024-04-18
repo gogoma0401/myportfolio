@@ -641,9 +641,14 @@ footer {
         top: 81%;
         left: 35%;
     }
+    .swiper-slide{
+        width: 380px;
+        height: 320px;
+        margin: auto;
+    }
     .swiper-slide .img-box {
-        width: 330px;
-        height: 310px;
+        width: 340px;
+        height: 300px;
         margin: auto;
     }
 
