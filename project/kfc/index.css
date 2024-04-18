@@ -253,18 +253,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     box-sizing: border-box;
-    max-width: 400px;
-    max-height: 400px;
-
 }
 
 .swiper-slide .img-box {
-    max-width: 350px;
-    max-height: 300px;
-    width: 100%;
-    height: 100%;
+    width: 18.1818vw;
+    height: 15.625vw;
     margin: auto;
 }
 
@@ -646,6 +641,11 @@ footer {
         top: 81%;
         left: 35%;
     }
+    .swiper-slide .img-box {
+        width: 330px;
+        height: 310px;
+        margin: auto;
+    }
 
     .load_imgbox {
         width: 55.732vw;
@@ -792,7 +792,7 @@ footer {
         height: 50vh;
         padding: 250px 0 80px;
     }
-    
+
     .global {
         padding: 0 40px;
         box-sizing: border-box;
