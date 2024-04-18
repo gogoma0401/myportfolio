@@ -75,12 +75,12 @@ $(document).ready(function () {
         $('.circle').eq(currentIndex).siblings().css('background-color', '#ffffff3e');
 
         if (currentIndex == 4) {
-    currentIndex = 0; // 현재 인덱스를 0으로 초기화
-    $('.slider_warp').animate({
-        marginLeft: 0
-    }, 0); // 애니메이션을 정지
-    $('.circle').eq(0).css('background-color', 'var(--pupule-color)');
-}
+            currentIndex = 0; // 현재 인덱스를 0으로 초기화
+            $('.slider_warp').animate({
+                marginLeft: 0
+            }, 0); // 애니메이션을 정지
+            $('.circle').eq(0).css('background-color', 'var(--pupule-color)');
+        }
     }, 2500)
 
 
@@ -165,7 +165,7 @@ $(document).ready(function () {
             trigger: ".guide",
             start: "top center",
             end: "bottom center",
-            scrub: 1,
+            scrub: 2,
         },
         x: -200,
         y: -200,

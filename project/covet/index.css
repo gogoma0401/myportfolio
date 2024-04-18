@@ -172,7 +172,7 @@ header {
 .title-txt {
     position: absolute;
     top: 40%;
-    left: 100px;
+    left: 10%;
     color: #fff;
     z-index: 999;
 
