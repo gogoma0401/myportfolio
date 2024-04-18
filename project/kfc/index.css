@@ -784,8 +784,6 @@ footer {
         top: 100%;
         left: 67%;
         transform: translate(-50%, -50%);
-        width: 57.11vw;
-        height: 38.86vw;
     }
 
     .best {
@@ -798,8 +796,6 @@ footer {
         top: 95%;
         left: 65%;
         transform: translate(-50%, -50%);
-        min-width: 40px;
-        min-height: 30px;
     }
 
     .global {
