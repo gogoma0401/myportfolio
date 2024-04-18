@@ -225,6 +225,8 @@ header {
     transform: translate(-50%, -50%);
     width: 47.11vw;
     height: 31.86vw;
+    min-width: 40px;
+    min-height: 30px;
 }
 
 .load_imgbox img {
