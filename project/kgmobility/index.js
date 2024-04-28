@@ -144,6 +144,17 @@
             $('.model_img3 p').text('2위. TIVOLIAIR');
             count == 3;
         })
+        // 필터 클릭 시 해당 필터에 맞는 카드만 표시
+        $('.card_boxs2, .card_boxs3, .card_boxs4').hide();
+        $('.overview .recent').css('color','#002c5f');
+        $('[data-filter]').on('click', function () {
+            $(this).siblings().css('color', '#666');
+            $(this).css('color','#002c5f');
+            
+            var filterValue = $(this).data('filter');
+            $('.card_boxs').hide(); 
+            $('.card_boxs[data-info*="' + filterValue + '"]').show();
+        });
 
         // 무한롤링
         function setFlowBanner() {

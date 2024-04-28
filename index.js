@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
     // 스크롤 이벤트 리스너 추가
     window.addEventListener('scroll', handleScroll);
 
@@ -79,32 +80,32 @@ document.addEventListener('DOMContentLoaded', function () {
     var liIndex = 0;
     var liLength = $(".typing-txt>ul>li").length;
 
-    
+
     var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
 
-    typingTxt = typingTxt.split(""); 
+    typingTxt = typingTxt.split("");
 
-    if (typingBool == false) { 
+    if (typingBool == false) {
         typingBool = true;
-        var tyInt = setInterval(typing, 100); 
+        var tyInt = setInterval(typing, 100);
     }
 
     function typing() {
         $(".typing ul li").removeClass("on");
         $(".typing ul li").eq(liIndex).addClass("on");
-        
 
-        if (typingIdx < typingTxt.length) { 
-            $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); 
+
+        if (typingIdx < typingTxt.length) {
+            $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]);
             typingIdx++;
-        } else { 
+        } else {
             if (liIndex < liLength - 1) {
                 liIndex++;
                 typingIdx = 0;
                 typingBool = false;
                 typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
 
-       
+
                 clearInterval(tyInt);
                 setTimeout(function () {
                     tyInt = setInterval(typing, 100);
@@ -159,11 +160,13 @@ document.addEventListener('DOMContentLoaded', function () {
     //간단한 버튼
     document.querySelector('.mail').addEventListener('click', function (e) {
         e.target.style.fontSize = '14px'
+        e.target.innerHTML = '';
         e.target.innerHTML = 'gogoma0401@naver.com';
         alert('감사합니다.')
     });
     document.querySelector('.tel').addEventListener('click', function (e) {
         e.target.style.fontSize = '14px'
+        e.target.innerHTML = '';
         e.target.innerHTML = '01075920401';
         alert('감사합니다.')
     });
@@ -183,5 +186,5 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
         },
     });
-    
+
 });

@@ -1,6 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
 
 html::-webkit-scrollbar {
     width: 10px;
@@ -18,14 +15,25 @@ html::-webkit-scrollbar-track {
 }
 
 body {
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
     background-color: #333;
     color: #eee;
     font-family: 'NotoSansKR-Regular', sans-serif;
 }
-
 a {
     color: #eee;
     text-decoration: none;
+}
+
+h2 {
+    font-family: 'NotoSansKR-Bold', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 header {
@@ -143,7 +151,7 @@ ul {
     width: 100%;
     display: flex;
     align-items: center;
-    font-size: 58px;
+    font-size: 3.25rem;
     font-weight: bold;
     height: 100vh;
     position: relative;
@@ -182,8 +190,8 @@ ul {
 }
 
 .intro .back {
-    width: 450px;
-    height: 450px;
+    width: 23.4375vw;
+    height: 23.4375vw;
     position: absolute;
     right: 20%;
     top: 25%;
@@ -191,6 +199,8 @@ ul {
 
 .intro .back img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 
 }
 
@@ -201,19 +211,17 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     text-align: center;
-    width: 180px;
-    height: 180px;
     z-index: 99;
 }
 
 
 .circle {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 10.9375vw;
+    height: 10.9375vw;
     border: solid 1px #fff;
     border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
     transform: rotate(360deg);
@@ -276,12 +284,6 @@ ul {
     justify-content: space-between;
 }
 
-h2 {
-    text-align: center;
-    font-size: 24px;
-    padding-bottom: 50px;
-}
-
 .about_items {
     display: flex;
     flex-direction: row;
@@ -320,10 +322,6 @@ h2 {
     height: 15px;
 }
 
-.experience {
-    padding-top: 50px;
-}
-
 .career {
     display: flex;
     flex-direction: row;
@@ -348,7 +346,7 @@ h2 {
 .skill-progress h1 {
     text-align: center;
     padding-bottom: 40px;
-    font-size: 40px;
+    font-size: 400px;
     font-weight: normal;
 }
 
@@ -602,8 +600,9 @@ h2 {
     padding: 15px;
     color: #f0f0f0;
 }
-.overview>ul>li{
-} 
+
+.overview>ul>li {}
+
 .overview ul li>ul {
     border-top: dashed 1px #f0f0f0;
 }
@@ -747,6 +746,7 @@ h2 {
     text-align: center;
     cursor: pointer;
     font-size: 20px;
+    transition: all 1s ease;
 }
 
 .contact ul li i {
@@ -775,11 +775,13 @@ h2 {
     border-radius: 50%;
     margin-bottom: 20px;
 }
-.guide a{
+
+.guide a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
+
 .guideto {
     width: 14px;
     height: 14px;
@@ -843,18 +845,28 @@ h2 {
 }
 
 @media screen and (max-width: 1400px) {
-    .intro {
-        font-size: 48px;
-    }
+    .intro {}
 
-    .intro .back {
-        width: 400px;
-        height: 400px;
+    .intro .back {}
+
+    .circles {}
+
+    .circle {
+        width: 12.5vw;
+        height: 12.5vw;
     }
 
     .circles {
-        width: 140px;
-        height: 140px;
+        position: absolute;
+        top: 10%;
+        right: 27%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.125rem;
+        font-weight: 500;
+        text-align: center;
+        z-index: 99;
     }
 
     .container {
@@ -915,15 +927,20 @@ h2 {
     }
 
     .intro {
-        font-size: 42px;
+        font-size: 2.4rem;
     }
 
     .intro .back {
-        width: 300px;
-        height: 300px;
+        width: 28vw;
+        height: 28vw;
         position: absolute;
         right: 20%;
         top: 28%;
+    }
+
+    .circle {
+        width: 14.6vw;
+        height: 14.6vw;
     }
 
     .container {
@@ -1033,8 +1050,6 @@ h2 {
     }
 
     .intro .back {
-        width: 250px;
-        height: 250px;
         position: absolute;
         right: 18%;
         top: 31%;
@@ -1044,6 +1059,11 @@ h2 {
         width: 110px;
         height: 110px;
         font-size: 16px;
+    }
+
+    .circle {
+        width: 110px;
+        height: 110px;
     }
 
     .container {
