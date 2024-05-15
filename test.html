@@ -5,26 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
 </head>
 
 <body>
     <div id="fullpage">
-        <div class="section">One</div>
-        <div class="section">
-            <div class="slide" data-anchor="slide1">Two 1</div>
-            <div class="slide" data-anchor="slide2">Two 2</div>
-        </div>
-        <div class="section">Three</div>
-        <div class="section">Four</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
     </div>
     <script>
         new fullpage('#fullpage', {
-            //하단은 옵션
-            autoScrolling: true,
-            scrollHorizontally: true,
             sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+
+            // Get your license at https://alvarotrigo.com/fullPage/pricing/
+            licenseKey: 'YOUR LICENSE KEY HERE '
         });
     </script>
 </body>

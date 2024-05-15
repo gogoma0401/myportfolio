@@ -1,5 +1,14 @@
     //스와이프
     $(document).ready(function () {
+        $(function() {
+        $('.hamburger-button').on('click', function(event){
+            event.preventDefault();
+            
+            $(this).toggleClass('active');
+            $('.overlay').toggleClass('visible');
+    
+        });
+    });
         var swiper = new Swiper(".mySwiper", {
             direction: 'horizontal',
             loop: true,
