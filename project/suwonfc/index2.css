@@ -1121,7 +1121,9 @@ footer {
     .youtube {
         height: 40vh;
     }
-
+    .shop .cont .product_cont{
+        box-sizing: border-box;
+    }
     .shop .cont .product_cont .img_box {
         width: 20vw;
         min-width: 155px;
