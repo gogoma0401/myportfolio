@@ -158,7 +158,7 @@ var swiper = new Swiper(".inner_cont .mySwiper", {
                             element.classList.add('active');
                         } else {
                             element.classList.remove('active');
-                        }
+                        }z
                     } else {
                         element.classList.remove('active');
                     }

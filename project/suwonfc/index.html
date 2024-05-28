@@ -6,15 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SUWONFC</title>
 
-    <!-- og -->
-
-
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/favicon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
     <!-- 화살표 -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -22,31 +18,24 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-    <!-- reset -->
-    <link rel="stylesheet" href="../common/style/reset.css">
-
-    <!-- aos js -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Link Swiper's CSS -->
+    <!-- Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
     <!-- index 디자인 css -->
     <link rel="stylesheet" href="./index.css">
-    <!-- script -->
-    <script src="style/jquery-3.7.0.min.js"></script>
-
-    <!-- aos js -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-    <!-- 알파벳 -->
+     <!-- 알파벳 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'>
 
+    <!-- script -->
+    <script src="style/jquery-3.7.0.min.js" defer></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/AOS.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+   
     <!-- index script -->
-    <script defer src="./index.js"></script>
+    <script defer src="./index.js" defer></script>
 </head>
 
 <body>
@@ -91,6 +80,7 @@
                         </svg></a>
                 </div>
             </div>
+            </div>
 
         </section>
 
@@ -118,9 +108,11 @@
 
 
 
-            <div class="btn" a href="footer">
+            <div class="btn">
+                <a href="footer">
                 <span class="txt"><a href="#">VIEW MORE</a></span>
                 <img src="./images/button.png">
+                </a>
             </div>
 
         </section>
@@ -491,27 +483,13 @@
         </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {});
-    </script>
-    <!-- aos -->
-    <script>
+         document.addEventListener('DOMContentLoaded', function() {
         AOS.init();
+    });
     </script>
-    <!-- 알파벳 철자 작아지는 -->
-    <script src='https://unpkg.com/splitting/dist/splitting.js'></script>
-    <script src='https://unpkg.com/scroll-out/dist/scroll-out.min.js'></script>
 </body>
 
 </html>
