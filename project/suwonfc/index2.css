@@ -953,7 +953,7 @@ footer {
     }
 
     .youtube {
-        height: 55vh;
+        height: 50vh;
     }
 
     .shop {
@@ -1021,6 +1021,11 @@ footer {
         display: none;
     }
 
+    .intro .part {
+        height: 110px;
+        align-items: center;
+    }
+
     .intro {
         padding-top: 120px;
         height: 50vh;
@@ -1034,10 +1039,10 @@ footer {
         font-size: 82px;
     }
 
-    .intro .part {
-        height: 140px;
-        align-items: center;
+    .intro .part.big_txt {
+        padding-left: 25px;
     }
+
 
     .get_it {
         padding-top: 60px;
@@ -1045,18 +1050,20 @@ footer {
     }
 
     .get_it .container {
-        font-size: 5rem;
+        font-size: 4.7rem;
     }
 
     .get_it p {
         margin: auto;
         text-align: center;
-        width: 440px;
+        width: 57.2917vw;
     }
-    .club .roller .rolling .img_box{
+
+    .club .roller .rolling .img_box {
         width: 160px;
         height: 70px;
     }
+
     .foot {
         padding: 0 20px;
     }
@@ -1067,8 +1074,9 @@ footer {
         gap: 15px;
     }
 }
+
 @media screen and (max-width: 480px) {
-    .get_it .container{
+    .get_it .container {
         font-size: 4rem;
     }
 }
