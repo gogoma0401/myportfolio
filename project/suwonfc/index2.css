@@ -706,7 +706,7 @@ header .menu_wrap .close .img_box img {
 
 .shop .cont .product_cont {
     width: 17.7083vw;
-    height: 340px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -716,9 +716,9 @@ header .menu_wrap .close .img_box img {
 }
 
 .shop .cont .product_cont .img_box {
-    width: 15.6250vw;
+    width: 13.6250vw;
     min-width: 200px;
-    height: 300px;
+    height: 340px;
 }
 
 .shop .cont .product_cont:hover {
