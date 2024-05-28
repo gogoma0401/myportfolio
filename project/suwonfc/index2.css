@@ -933,7 +933,7 @@ footer {
     }
 
     .intro div .trapezoid {
-        width: 20px;
+        display: none;
     }
 
     .part.part3.big_txt .trapezoid {
@@ -1051,9 +1051,12 @@ footer {
     .get_it p {
         margin: auto;
         text-align: center;
-        width: 450px;
+        width: 440px;
     }
-
+    .club .roller .rolling .img_box{
+        width: 160px;
+        height: 70px;
+    }
     .foot {
         padding: 0 20px;
     }
@@ -1062,5 +1065,10 @@ footer {
         font-size: 18px;
         display: flex;
         gap: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .get_it .container{
+        font-size: 4rem;
     }
 }
