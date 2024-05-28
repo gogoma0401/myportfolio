@@ -1068,9 +1068,11 @@ footer {
         width: 160px;
         height: 70px;
     }
-    .poster{
+
+    .poster {
         display: none;
     }
+
     .shop .cont .product_cont .img_box {
         width: 24vw;
         min-width: 175px;
@@ -1108,6 +1110,16 @@ footer {
     .get_it .container .letter5,
     .get_it .container .letter8 {
         padding-left: 20px;
+    }
+
+    .youtube {
+        height: 40vh;
+    }
+
+    .shop .cont .product_cont .img_box {
+        width: 20vw;
+        min-width: 155px;
+        height: 310px;
     }
 
 
