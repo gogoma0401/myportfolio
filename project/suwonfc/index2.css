@@ -1061,12 +1061,20 @@ footer {
     .get_it p {
         margin: auto;
         text-align: center;
-        width: 64.2917vw;
+        width: 70vw;
     }
 
     .club .roller .rolling .img_box {
         width: 160px;
         height: 70px;
+    }
+    .poster{
+        display: none;
+    }
+    .shop .cont .product_cont .img_box {
+        width: 27vw;
+        min-width: 200px;
+        height: 310px;
     }
 
     .line_b {
@@ -1081,6 +1089,10 @@ footer {
         font-size: 18px;
     }
 
+    .club {
+        margin-top: 50px;
+    }
+
     .menu {
         font-size: 18px;
         display: flex;
@@ -1090,11 +1102,13 @@ footer {
 
 @media screen and (max-width: 480px) {
     .get_it .container {
-        font-size: 3.7rem;
+        font-size: 3.3rem;
     }
 
     .get_it .container .letter5,
     .get_it .container .letter8 {
         padding-left: 20px;
     }
+
+
 }
