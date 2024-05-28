@@ -1094,7 +1094,7 @@ footer {
     }
 
     .news ul li .n_txt {
-        width: 330px;
+        width: 300px;
         font-size: 1rem;
         text-align: left;
     }
@@ -1146,12 +1146,20 @@ footer {
     .shop .cont .product_cont {
         box-sizing: border-box;
     }
-
+    .shop .cont .product_cont {
+        width: 44.4141vw;
+        height: 300px;
+    }
     .shop .cont .product_cont .img_box {
         width: 20vw;
-        min-width: 155px;
-        height: 310px;
+        min-width: 145px;
+        height: 250px;
     }
 
+    .news ul li .box {
+        max-width: 300px;
+        width: 100%;
+        overflow: hidden;
+    }
 
 }
