@@ -1072,8 +1072,8 @@ footer {
         display: none;
     }
     .shop .cont .product_cont .img_box {
-        width: 27vw;
-        min-width: 200px;
+        width: 24vw;
+        min-width: 175px;
         height: 310px;
     }
 
