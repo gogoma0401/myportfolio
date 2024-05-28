@@ -313,6 +313,7 @@ header .menu_wrap .close .img_box img {
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .intro .part2 .trapezoid .video_container video {
@@ -320,7 +321,7 @@ header .menu_wrap .close .img_box img {
 }
 
 .intro .part3 .trapezoid .video_container video {
-    top: -50%;
+    top: -30%;
 }
 
 .arrow {
@@ -875,6 +876,9 @@ footer {
         font-size: 4.6875rem;
     }
 
+    .intro .part {
+        height: 170px;
+    }
     .btn {
         padding: 14px 70px;
     }
@@ -944,7 +948,7 @@ footer {
     }
 
     .youtube {
-        height: 40vh;
+        height: 55vh;
     }
 
     .shop {
@@ -1036,11 +1040,10 @@ footer {
     .foot {
         padding: 0 20px;
     }
-}
 
-.menu {
-    font-size: 18px;
-    display: flex;
-    gap: 15px;
-}
+    .menu {
+        font-size: 18px;
+        display: flex;
+        gap: 15px;
+    }
 }
