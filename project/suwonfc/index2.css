@@ -780,7 +780,7 @@ header .menu_wrap .close .img_box img {
 .news ul li .n_txt {
     margin-top: 15px;
     width: 370px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #fff;
     z-index: 999;
@@ -1036,7 +1036,7 @@ footer {
     }
 
     .intro span {
-        font-size: 82px;
+        font-size: 80px;
     }
 
     .intro .part.big_txt {
@@ -1088,7 +1088,15 @@ footer {
     }
 
     .news ul li .n_txt {
-        font-size: 18px;
+        width: 330px;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .news ul li .n_txt {
+        width: 330px;
+        font-size: 1rem;
+        text-align: left;
     }
 
     .club {
@@ -1096,7 +1104,7 @@ footer {
     }
 
     .news ul li .box {
-        max-width: 350px;
+        max-width: 330px;
         width: 100%;
         overflow: hidden;
     }
@@ -1109,6 +1117,19 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    header .logo_box {
+        width: 70px;
+        height: 70px;
+    }
+
+    .intro .part.big_txt {
+        padding-left: 12px;
+    }
+
+    .intro span {
+        font-size: 77px;
+    }
+
     .get_it .container {
         font-size: 3.3rem;
     }
@@ -1121,9 +1142,11 @@ footer {
     .youtube {
         height: 40vh;
     }
-    .shop .cont .product_cont{
+
+    .shop .cont .product_cont {
         box-sizing: border-box;
     }
+
     .shop .cont .product_cont .img_box {
         width: 20vw;
         min-width: 155px;
