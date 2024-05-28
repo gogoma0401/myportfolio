@@ -879,6 +879,7 @@ footer {
     .intro .part {
         height: 170px;
     }
+
     .btn {
         padding: 14px 70px;
     }
@@ -917,6 +918,10 @@ footer {
 
     .btn {
         padding: 14px 50px;
+    }
+
+    .intro div .trapezoid {
+        height: 90px;
     }
 
     .intro span {
@@ -998,12 +1003,20 @@ footer {
         height: 340px;
     }
 
+    .ourbusiness {
+        padding: 0 40px;
+    }
+
     .foot {
         padding: 0 50px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2.7rem;
+    }
+
     .arrow {
         display: none;
     }
@@ -1013,12 +1026,16 @@ footer {
         height: 50vh;
     }
 
+    .club .swiper {
+        padding-top: 40px;
+    }
+
     .intro span {
-        font-size: 88px;
+        font-size: 82px;
     }
 
     .intro .part {
-        height: 150px;
+        height: 140px;
         align-items: center;
     }
 
