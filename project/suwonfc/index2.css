@@ -18,7 +18,7 @@ a {
 }
 
 h2 {
-    font-size: 5.625rem;
+    font-size: 5.5rem;
     text-transform: uppercase;
     font-weight: 900;
 
@@ -251,17 +251,20 @@ header .menu_wrap .close .img_box img {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    height: 220px;
 }
 
 .intro div .trapezoid {
-    width: 43.2292vw;
+    width: 43vw;
     transform: skew(-30deg);
     background-color: #333;
     height: 130px;
     margin: 0 40px;
     overflow: hidden;
     position: relative;
+}
+
+.intro div:nth-child(1) .trapezoid {
+    width: 30vw;
 }
 
 .intro div .trapezoid::after {
@@ -610,7 +613,7 @@ header .menu_wrap .close .img_box img {
     color: #fff;
     background-color: #151515;
     box-sizing: border-box;
-    height: 100vh;
+    height: 80vh;
 }
 
 .youtube h2 {
@@ -687,6 +690,7 @@ header .menu_wrap .close .img_box img {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10px;
 }
 
 .shop .cont_container .btn {
@@ -713,7 +717,7 @@ header .menu_wrap .close .img_box img {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-
+    border: solid 2px transparent;
 }
 
 .shop .cont .product_cont .img_box {
@@ -742,15 +746,18 @@ header .menu_wrap .close .img_box img {
     margin-top: 0;
     margin-bottom: 50px;
     color: #fff;
-    padding: 70px 80px 10px;
+    padding-top: 40px;
+    padding-left: 60px;
 }
 
-.news ul {
+.news>ul {
+    max-width: 1920px;
     width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 0;
+    justify-content: space-between;
 
 }
 
@@ -759,11 +766,10 @@ header .menu_wrap .close .img_box img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px;
 }
 
 .news ul li .box {
-    max-width: 368px;
+    width: 18vw;
     overflow: hidden;
 }
 
@@ -779,8 +785,8 @@ header .menu_wrap .close .img_box img {
 
 .news ul li .n_txt {
     margin-top: 15px;
-    width: 370px;
-    font-size: 1.25rem;
+    width: 18vw;
+    font-size: 1rem;
     font-weight: 400;
     color: #fff;
     z-index: 999;
@@ -876,10 +882,6 @@ footer {
         font-size: 4.6875rem;
     }
 
-    .intro .part {
-        height: 170px;
-    }
-
     .btn {
         padding: 14px 70px;
     }
@@ -902,6 +904,10 @@ footer {
     .intro {
         padding-top: 140px;
         height: 60vh;
+    }
+
+    .intro .big_txt {
+        padding-left: 25px;
     }
 
     header .gnb_warp {
@@ -953,7 +959,7 @@ footer {
     }
 
     .youtube {
-        height: 50vh;
+        height: 60vh;
     }
 
     .shop {
@@ -997,14 +1003,35 @@ footer {
         box-sizing: border-box;
     }
 
-    .shop .cont .product_cont .img_box {
-        width: 33.6250vw;
-        min-width: 200px;
-        height: 336px;
-    }
-
     .ourbusiness {
         padding: 0 40px;
+    }
+
+    .news>ul {
+        max-width: 1024px;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .news>ul>li {
+        flex-basis: 50%;
+    }
+
+    .news>ul>li:nth-child(1),
+    .news>ul>li:nth-child(2) {
+        margin-bottom: 15px;
+    }
+
+    .news ul li .box {
+        width: 30vw;
+    }
+
+    .news ul li .n_txt {
+        width: 30vw;
     }
 
     .foot {
@@ -1027,8 +1054,12 @@ footer {
     }
 
     .intro {
-        padding-top: 120px;
+        padding-top: 100px;
         height: 50vh;
+    }
+
+    .intro .part.big_txt {
+        padding-left: 30px;
     }
 
     .club .swiper {
@@ -1036,11 +1067,7 @@ footer {
     }
 
     .intro span {
-        font-size: 80px;
-    }
-
-    .intro .part.big_txt {
-        padding-left: 18px;
+        font-size: 100px;
     }
 
 
@@ -1079,34 +1106,44 @@ footer {
         height: 310px;
     }
 
+    .menu ul{
+        margin-left: -25px;
+    }
+
     .line_b {
         display: block;
     }
 
     .foot {
-        padding: 0 20px;
+        max-width: 768px;
+        width: 100%;
+        padding: 0 60px;
+        box-sizing: border-box;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
 
-    .news ul li .n_txt {
-        width: 330px;
-        font-size: 1rem;
-        text-align: left;
+    .foot .info {
+        flex-basis: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
     }
 
-    .news ul li .n_txt {
-        width: 300px;
-        font-size: 1rem;
-        text-align: left;
+    .info ul:nth-child(2) {
+        margin-top: 0;
+    }
+
+
+    .foot .menu {
+        flex-basis: 100%;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .club {
         margin-top: 50px;
-    }
-
-    .news ul li .box {
-        max-width: 330px;
-        width: 100%;
-        overflow: hidden;
     }
 
     .menu {
@@ -1146,10 +1183,12 @@ footer {
     .shop .cont .product_cont {
         box-sizing: border-box;
     }
+
     .shop .cont .product_cont {
         width: 44.4141vw;
         height: 300px;
     }
+
     .shop .cont .product_cont .img_box {
         width: 20vw;
         min-width: 145px;
