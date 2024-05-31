@@ -617,7 +617,7 @@ header .menu_wrap .close .img_box img {
 
 .youtube h2 {
     padding-left: 40px;
-    margin-bottom: 15px;
+    padding-top: 15px;
 }
 
 .youtube .video {
@@ -629,11 +629,11 @@ header .menu_wrap .close .img_box img {
 
 .youtube .video iframe {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 70%;
 }
 
 .shop {
