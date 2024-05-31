@@ -613,7 +613,6 @@ header .menu_wrap .close .img_box img {
     color: #fff;
     background-color: #151515;
     box-sizing: border-box;
-    height: 80vh;
 }
 
 .youtube h2 {
@@ -621,18 +620,20 @@ header .menu_wrap .close .img_box img {
     margin-bottom: 15px;
 }
 
-.video {
-    width: 100%;
+.youtube .video {
     position: relative;
-    padding-top: 56.25%; /* 16:9 비율 유지 */
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
 }
 
-.video iframe {
+.youtube .video iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
 }
 
 .shop {
@@ -956,10 +957,6 @@ footer {
         font-size: 7.5rem
     }
 
-    .youtube {
-        height: 60vh;
-    }
-
     .shop {
         overflow: hidden;
         display: flex;
@@ -1174,9 +1171,6 @@ footer {
         padding-left: 20px;
     }
 
-    .youtube {
-        height: 40vh;
-    }
 
     .shop .cont .product_cont {
         box-sizing: border-box;
