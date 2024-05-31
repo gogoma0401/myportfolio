@@ -624,7 +624,7 @@ header .menu_wrap .close .img_box img {
 .video {
     width: 100%;
     position: relative;
-    height: 0;
+    height: 100%
 }
 
 .video iframe {
