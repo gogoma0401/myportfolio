@@ -470,6 +470,7 @@ header .menu_wrap .close .img_box img {
     padding: 0 80px;
     box-sizing: border-box;
     margin-bottom: 150px;
+    overflow: hidden;
 }
 
 .ourbusiness ul li {
